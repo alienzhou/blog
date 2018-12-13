@@ -8,7 +8,7 @@
 - [MongoDB高可用__使用Replica Set](https://github.com/alienzhou/blog/issues/12)
 - [各类“服务器推”技术原理与实例（Polling/COMET/SSE/WebSocket）](https://github.com/alienzhou/blog/issues/17)
 
-## webpack进阶
+## Webpack进阶
 
 - [【webpack进阶】使用babel避免webpack编译运行时模块依赖](https://github.com/alienzhou/blog/issues/18)
 - [【webpack进阶】前端运行时的模块化设计与实现](https://github.com/alienzhou/blog/issues/19)

@@ -7,6 +7,7 @@
 - [(S)CSS中实现主题样式的4½种方式 [译]](https://github.com/alienzhou/blog/issues/1)
 - [MongoDB高可用__使用Replica Set](https://github.com/alienzhou/blog/issues/12)
 - [各类“服务器推”技术原理与实例（Polling/COMET/SSE/WebSocket）](https://github.com/alienzhou/blog/issues/17)
+- [Gulp.js实践详解__基于Gulp的多页面应用实践指南](https://github.com/alienzhou/blog/issues/23)
 
 ## Webpack进阶
 

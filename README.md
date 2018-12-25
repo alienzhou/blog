@@ -9,6 +9,7 @@
 - [各类“服务器推”技术原理与实例（Polling/COMET/SSE/WebSocket）](https://github.com/alienzhou/blog/issues/17)
 - [Gulp.js实践详解__基于Gulp的多页面应用实践指南](https://github.com/alienzhou/blog/issues/23)
 - [【性能优化实践】优化打包策略提升页面加载速度](https://github.com/alienzhou/blog/issues/24)
+- [【性能优化】quicklink：实现原理与给前端的启发](https://github.com/alienzhou/blog/issues/25)
 
 
 ## Webpack进阶

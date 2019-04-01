@@ -1,6 +1,12 @@
 > 个人博客，不定期发布一些技术学习的收获，主要聚焦于前端领域，也会有一些其他领域的内容。欢迎star
 
-文章列表：
+## 最新更新
+
+- [【3分钟速览】前端广播式通信：Broadcast Channel ](https://github.com/alienzhou/blog/issues/26)
+- [前端跨页面通信，你知道哪些方法？](https://github.com/alienzhou/blog/issues/27)
+
+
+## 未汇总文章列表
 
 - [年终回顾，为你汇总一份「前端技术清单」](https://github.com/alienzhou/blog/issues/22)
 - [一篇全面的CSS布局学习指南 [译]](https://github.com/alienzhou/blog/issues/13)
@@ -8,6 +14,9 @@
 - [MongoDB高可用__使用Replica Set](https://github.com/alienzhou/blog/issues/12)
 - [各类“服务器推”技术原理与实例（Polling/COMET/SSE/WebSocket）](https://github.com/alienzhou/blog/issues/17)
 - [Gulp.js实践详解__基于Gulp的多页面应用实践指南](https://github.com/alienzhou/blog/issues/23)
+
+## 性能
+
 - [【性能优化实践】优化打包策略提升页面加载速度](https://github.com/alienzhou/blog/issues/24)
 - [【性能优化】quicklink：实现原理与给前端的启发](https://github.com/alienzhou/blog/issues/25)
 

@@ -2,13 +2,13 @@
 
 ## 最新更新
 
-- [【3分钟速览】前端广播式通信：Broadcast Channel ](https://github.com/alienzhou/blog/issues/26)
-- [前端跨页面通信，你知道哪些方法？](https://github.com/alienzhou/blog/issues/27)
-
+- [✨如何实现一个通用的“划词高亮”在线笔记功能？✨🖍️](https://github.com/alienzhou/blog/issues/28)
 
 ## 未汇总文章列表
 
 - [年终回顾，为你汇总一份「前端技术清单」](https://github.com/alienzhou/blog/issues/22)
+- [前端跨页面通信，你知道哪些方法？](https://github.com/alienzhou/blog/issues/27)
+- [【3分钟速览】前端广播式通信：Broadcast Channel ](https://github.com/alienzhou/blog/issues/26)
 - [一篇全面的CSS布局学习指南 [译]](https://github.com/alienzhou/blog/issues/13)
 - [(S)CSS中实现主题样式的4½种方式 [译]](https://github.com/alienzhou/blog/issues/1)
 - [MongoDB高可用__使用Replica Set](https://github.com/alienzhou/blog/issues/12)

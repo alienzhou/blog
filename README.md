@@ -2,7 +2,7 @@
 
 ## 最新更新
 
-- [🛠如何快速开发一个自己的项目脚手架？](https://github.com/alienzhou/blog/issues/29)
+- [如何在零JS代码情况下实现一个实时聊天功能❓](https://github.com/alienzhou/blog/issues/29)
 
 ## 综合列表
 
@@ -10,11 +10,19 @@
 - [✨如何实现一个通用的“划词高亮”在线笔记功能？✨🖍️](https://github.com/alienzhou/blog/issues/28)
 - [前端跨页面通信，你知道哪些方法？](https://github.com/alienzhou/blog/issues/27)
 - [【3分钟速览】前端广播式通信：Broadcast Channel ](https://github.com/alienzhou/blog/issues/26)
-- [一篇全面的CSS布局学习指南 [译]](https://github.com/alienzhou/blog/issues/13)
-- [(S)CSS中实现主题样式的4½种方式 [译]](https://github.com/alienzhou/blog/issues/1)
 - [MongoDB高可用__使用Replica Set](https://github.com/alienzhou/blog/issues/12)
 - [各类“服务器推”技术原理与实例（Polling/COMET/SSE/WebSocket）](https://github.com/alienzhou/blog/issues/17)
+
+
+## 自动化工具
+
 - [Gulp.js实践详解__基于Gulp的多页面应用实践指南](https://github.com/alienzhou/blog/issues/23)
+- [🛠如何快速开发一个自己的项目脚手架？](https://github.com/alienzhou/blog/issues/29)
+
+## CSS 学习
+
+- [一篇全面的CSS布局学习指南 [译]](https://github.com/alienzhou/blog/issues/13)
+- [(S)CSS中实现主题样式的4½种方式 [译]](https://github.com/alienzhou/blog/issues/1)
 
 ## 性能
 

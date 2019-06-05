@@ -2,7 +2,7 @@
 
 ## 最新更新
 
-- [如何在零JS代码情况下实现一个实时聊天功能❓](https://github.com/alienzhou/blog/issues/29)
+- [如何提升JSON.stringify()的性能？](https://github.com/alienzhou/blog/issues/31)
 
 ## 综合列表
 
@@ -12,7 +12,7 @@
 - [【3分钟速览】前端广播式通信：Broadcast Channel ](https://github.com/alienzhou/blog/issues/26)
 - [MongoDB高可用__使用Replica Set](https://github.com/alienzhou/blog/issues/12)
 - [各类“服务器推”技术原理与实例（Polling/COMET/SSE/WebSocket）](https://github.com/alienzhou/blog/issues/17)
-
+- [如何在零JS代码情况下实现一个实时聊天功能❓](https://github.com/alienzhou/blog/issues/30)
 
 ## 自动化工具
 

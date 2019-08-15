@@ -2,7 +2,7 @@
 
 ## 最新更新
 
-- [如何提升JSON.stringify()的性能？](https://github.com/alienzhou/blog/issues/31)
+- [【性能优化指南】带你全面掌握前端性能优化 🚀](https://github.com/alienzhou/blog/issues/32)
 
 ## 综合列表
 
@@ -28,7 +28,7 @@
 
 - [【性能优化实践】优化打包策略提升页面加载速度](https://github.com/alienzhou/blog/issues/24)
 - [【性能优化】quicklink：实现原理与给前端的启发](https://github.com/alienzhou/blog/issues/25)
-
+- [如何提升JSON.stringify()的性能？](https://github.com/alienzhou/blog/issues/31)
 
 ## Webpack进阶
 

@@ -2,7 +2,7 @@
 
 ## 最新更新
 
-- [【性能优化指南】带你全面掌握前端性能优化 🚀](https://github.com/alienzhou/blog/issues/32)
+- [【性能优化指南】带你全面掌握前端性能优化 🚀](https://github.com/alienzhou/blog/issues/32)（2019.08.15）
 
 ## 综合列表
 

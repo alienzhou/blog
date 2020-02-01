@@ -22,7 +22,7 @@
 
 ##  1. <a name=''></a>最新更新
 
-- [【漫游Github】无编译/无服务器，实现浏览器的 CommonJS 模块化](https://github.com/alienzhou/blog/issues/33)（2020.01.04）
+- [【3分钟速览】如何“严谨地”判断两个变量是否相同](https://github.com/alienzhou/blog/issues/34)（2020.02.01）
 
 ##  2. <a name='-1'></a>综合列表
 
@@ -37,6 +37,7 @@
 
 - [【漫游Github】quicklink：实现原理与给前端的启发](https://github.com/alienzhou/blog/issues/25)
 - [【漫游Github】如何提升JSON.stringify()的性能？](https://github.com/alienzhou/blog/issues/31)
+- [【漫游Github】无编译/无服务器，实现浏览器的 CommonJS 模块化](https://github.com/alienzhou/blog/issues/33)
 
 ##  4. <a name='-1'></a>自动化工具
 

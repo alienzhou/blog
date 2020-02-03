@@ -1,0 +1,77 @@
+<% function is_same_link(a, b) {
+    function santize(url) {
+        let paths = url.replace(/(^\w+:|^)\/\//, '').split('#')[0].split('/');
+        if (paths.length > 0 && paths[paths.length - 1].trim() === 'index.html') {
+            paths = paths.slice(0, paths.length - 1)
+        }
+        return paths.join('/');
+    }
+
+    return santize(url_for(a)) == santize(url_for(b));
+} %>
+<nav class="navbar is-transparent is-fixed-top navbar-main" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item navbar-logo" href="<%- url_for('/' + (!is_default_language(page_language()) ? page_language() : '')) %>">
+                <% if (has_config('logo') && get_config('logo')) { %>
+                    <% if (has_config('logo.text') && get_config('logo.text')) { %>
+                    <%= get_config('logo.text') %>
+                    <% } else { %>
+                    <img src="<%- url_for(get_config('logo')) %>" alt="" height="28">
+                    <% } %>
+                <% } else { %>
+                <img src="<%- url_for('images/logo.png') %>" alt="" height="28">
+                <% } %>
+            </a>
+            <div class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <% if (has_config('menu')) { %>
+        <div class="navbar-menu navbar-start">
+            <% for (let i in get_config('menu')) { let menu = get_config('menu')[i]; %>
+            <a class="navbar-item <% if (typeof(page.path) !== 'undefined' && is_same_link(menu, page.path)) { %>is-active<% } %>"
+               href="<%- url_for(menu) %>"><%= i %></a>
+            <% } %>
+        </div>
+        <% } %>
+        <div class="navbar-menu navbar-end">
+            <% if (has_config('search')) { %>
+            <a class="navbar-item search" title="<%= __('nav.search') %>" href="javascript:;">
+                <i class="fas fa-search"></i>
+            </a>
+            <% } %>
+            <% if (has_config('toc') && get_config('toc') === true && typeof(page.content) !== 'undefined') { %>
+            <div class="navbar-item is-hoverable has-dropdown is-hidden-mobile is-hidden-tablet-only toc">
+                <a class="navbar-item" title="<%= __('nav.toc') %>">
+                    <i class="fa fa-list"></i>
+                </a>
+                <div class="navbar-dropdown is-right">
+                    <% let lastHeading = null; %>
+                    <% for (let heading of toc_list(page.content)) { %>
+                    <% if (lastHeading !== null && heading[0].split('.')[0] !== lastHeading) { %>
+                    <hr class="navbar-divider">
+                    <% } %>
+                    <% lastHeading = heading[0].split('.')[0]; %>
+                    <a class="navbar-item" href="#<%= heading[1] %>"><%= heading[0] %>&nbsp;&nbsp;<%- heading[3] === 1 ? '<b>' : '' %><%= heading[2] %><%- heading[3] === 1 ? '</b>' : '' %></a>
+                    <% } %>
+                </div>
+            </div>
+            <% } %>
+            <% if (has_config('navbar_links')) {
+                for (let name in get_config('navbar_links')) {
+                    let link = get_config('navbar_links')[name]; %>
+            <a class="navbar-item" title="<%= name %>" href="<%= typeof(link) === 'string' ? link : link.url%>">
+                <% if (typeof(link) === 'string') { %>
+                <%= name %>
+                <% } else { %>
+                <i class="<%= link.icon %>"></i>
+                <% } %>
+            </a>
+               <% } %>
+            <% } %>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,28 @@
+name: 'English'
+common:
+  archives: 'Archives'
+  category: 'Category'
+  tag: 'Tag'
+  categories: 'Categories'
+  tags: 'Tags'
+nav:
+  next: 'Next'
+  prev: 'Prev'
+  search: 'Search'
+  toc: 'Table of Contents'
+article:
+  read_more: 'Read More'
+  read: 'read'
+  about: 'About'
+  words: 'words'
+  comments: 'Comments'
+  contents: 'Contents'
+search:
+  hint: 'Type something...'
+insight:
+  hint: 'Type something...'
+  posts: 'Posts'
+  pages: 'Pages'
+  categories: 'Categories'
+  tags: 'Tags'
+  untitled: '(Untitled)'

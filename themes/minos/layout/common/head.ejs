@@ -1,0 +1,61 @@
+<meta charset="utf-8">
+<title><%= page_title() %></title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
+
+<% const languages = display_languages();
+const pageLanguage = page_language(page);
+if (languages.length > 1) {
+    languages.forEach((language) => {
+        if (language !== 'default' && pageLanguage !== language) { %>
+<link href="<%= url_for(i18n_path(!is_default_language(language) ? language : null)) %>" rel="alternate" hreflang="<%= rfc5646(language) %>" />
+    <% }
+    });
+} %>
+
+<% if (has_config('description')) { %>
+<meta name="description" content="<%- get_config('description') %>">
+<% } %>
+
+<% if (has_config('keywords')) { %>
+<meta name="keywords" content="<%= get_config('keywords') %>">
+<% } %>
+
+<% if (has_config('open_graph')) { %>
+    <%- open_graph({
+        twitter_id: get_config('open_graph.twitter_id', ''),
+        twitter_site: get_config('open_graph.twitter_site', ''),
+        google_plus: get_config('open_graph.google_plus', ''),
+        fb_admins: get_config('open_graph.fb_admins', ''),
+        fb_app_id: get_config('open_graph.fb_app_id', '')
+    }) %>
+<% } %>
+
+<% if (has_config('rss')) { %>
+<link rel="alternative" href="<%- get_config('rss') %>" title="<%= get_config('title') %>" type="application/atom+xml">
+<% } %>
+
+<% if (has_config('favicon')) { %>
+<link rel="icon" href="<%- get_config('favicon') %>">
+<% } %>
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ovo|Source+Code+Pro">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+
+<% if (!(has_config('plugins.gallery') && get_config('plugins.gallery') === false)) { %>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+<% } %>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/<%= get_config('article.highlight', 'atom-one-light') %>.min.css">
+
+<%- css('css/style') %>
+
+<script defer src="//use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+<% if (has_config('plugins')) { %>
+    <% for (let plugin in get_config('plugins')) { %>
+    <%- partial('plugins/' + plugin, {head: true}) %>
+    <% } %>
+<% } %>

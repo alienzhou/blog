@@ -1,0 +1,73 @@
+<article class="article content gallery" itemscope itemprop="blogPost">
+    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+        <% if (index) { %>
+            <a href="<%- url_for(post.link ? post.link : post.path) %>" itemprop="url"><%= post.title %></a>
+        <% } else { %>
+            <%= post.title %>
+        <% } %>
+    </h1>
+    <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
+        <span class="column is-narrow">
+            <time datetime="<%= date_xml(post.date) %>" itemprop="datePublished"><%= format_date_full(post.date) %></time>
+        </span>
+        <% if (post.categories && post.categories.length){ %>
+        <span class="column is-narrow article-category">
+            <i class="far fa-folder"></i>
+            <%- (post._categories || post.categories).map(category =>
+                    `<a class="article-category-link" href="${url_for(category.path)}">${category.name}</a>`)
+                    .join('<span>></span>') %>
+        </span>
+        <% } %>
+        <% if (!has_config('article.readtime') || get_config('article.readtime') === true) { %>
+        <span class="column is-narrow">
+            <% let words = word_count(post._content); %>
+            <% let time = duration((words / 150.0) * 60, 'seconds') %>
+            <%= `${ time.humanize() } ${ __('article.read')} (${ __('article.about') } ${ words } ${ __('article.words') })` %>
+        </span>
+        <% } %>
+    </div>
+    <div class="article-entry is-size-6-mobile" itemprop="articleBody">
+    <% if (post.excerpt && index){ %>
+        <%- post.excerpt %>
+        <p class="article-more-link">
+            <a href="<%- url_for(post.path) %>#more"><%= __('article.read_more') %></a>
+        </p>
+    <% } else { %>
+        <%- post.content %>
+    <% } %>
+    </div>
+    <% if (!index && post.tags && post.tags.length){ %>
+    <div class="columns is-variable is-1 is-multiline is-mobile">
+    <% (post._tags || post.tags).forEach(tag => { %>
+        <span class="column is-narrow"><a class="tag is-light article-tag" href="<%- url_for(tag.path) %>">#<%= tag.name %></a></span>
+    <% }) %>
+    </div>
+    <% } %>
+    <% if (!index && (post.prev || post.next)) { %>
+    <div class="columns is-mobile is-multiline article-nav">
+        <span class="column is-12-mobile is-half-desktop <%= !post.prev ? 'is-hidden-mobile' : '' %> article-nav-prev">
+            <% if (post.prev){ %>
+            <a href="<%- url_for(post.prev.path) %>"><%= post.prev.title %></a>
+            <% } %>
+        </span>
+        <span class="column is-12-mobile is-half-desktop <%= !post.next ? 'is-hidden-mobile' : '' %> article-nav-next">
+            <% if (post.next){ %>
+            <a href="<%- url_for(post.next.path) %>"><%= post.next.title %></a>
+            <% } %>
+        </span>
+    </div>
+    <% } %>
+</article>
+
+<% if (!index && has_config('share.type')) { %>
+<div class="sharebox">
+    <%- partial('share/' + get_config('share.type')) %>
+</div>
+<% } %>
+
+<% if (!index && get_config('comments') && has_config('comment.type')) { %>
+<div class="comments">
+    <h3 class="title is-4"><%= __('article.comments') %></h3>
+    <%- partial('comment/' + get_config('comment.type')) %>
+</div>
+<% } %>

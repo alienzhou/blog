@@ -1,0 +1,35 @@
+# Website's icon url.
+favicon: /favicon.png
+
+logo:
+  text: AlienZHOU
+
+article:
+  # Show word count and estimated reading time.
+  readtime: true
+  # Code highlight theme, please see https://highlightjs.org/static/demo/
+  highlight: tomorrow-night-eighties
+  readmore: '阅读更多>>'
+
+# Search plugin settings.
+search:
+  type: insight
+
+# Navigation bar toc settings
+toc: true
+
+# Comment plugin settings.
+comment:
+  type: disqus
+  shortname: friend
+
+navbar_links:
+  RSS:
+    icon: fas fa-rss
+    url: /rss.xml
+  GitHub:
+    icon: fab fa-github
+    url: https://github.com/alienzhou
+
+footer_links:
+  GitHub: https://github.com/alienzhou

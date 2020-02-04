@@ -3,7 +3,7 @@ $family-mono: "Source Code Pro", monospace, "Microsoft YaHei";
 $border-color: #dbdbdb;
 
 body, button, input, select, textarea {
-    font-family: $family-serif;
+    font-family: "PingFangSC-Regular" $family-serif;
 }
 
 
@@ -47,6 +47,12 @@ a.tag.article-tag {
 }
 
 .article {
+    h1 {
+        font-family: "PingFangSC-Regular" $family-serif;
+        font-weight: 500;
+        margin: 0.25em auto 0.75em auto;
+    }
+
     & + .article {
         padding-top: 2rem;
         border-top: 1px solid $border-color;
@@ -62,6 +68,7 @@ a.tag.article-tag {
     }
 
     .article-meta {
+        color: #999;
         font-size: .9rem;
         text-transform: uppercase;
 

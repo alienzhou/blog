@@ -1,10 +1,12 @@
 ---
-title: 【PWA学习与实践】(4) 解决FireBase login验证失败问题
+title: 解决 FireBase 登录失败的问题
 date: 2018-04-10 12:00:00
-tags: PWA
+tags:
+- PWA
+- TroubleShooting
 ---
 
-本文是《PWA学习与实践》系列的第四篇。是我在测试其他demo时遇到的一个问题，算是一篇TroubleShooting。
+本文是《PWA学习与实践》系列的第四篇。是我在测试其他demo时遇到的一个问题，算是一篇 TroubleShooting。
 
 <!-- more -->
 

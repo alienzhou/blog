@@ -1,7 +1,11 @@
 <article class="article content gallery" itemscope itemprop="blogPost">
-    <h1 class="article-title is-size-3 is-size-4-mobile" itemprop="name">
+    <h1 class="article-title is-size-2 is-size-4-mobile" itemprop="name">
         <% if (index) { %>
-            <a href="<%- url_for(post.link ? post.link : post.path) %>" itemprop="url"><%= post.title %></a>
+            <% if (post.external){ %>
+                <a href="<%- post.external %>" target="_blank" itemprop="url"><%= post.title %></a>
+                <% } else { %>
+                <a href="<%- url_for(post.link ? post.link : post.path) %>" itemprop="url"><%= post.title %></a>
+            <% } %>
         <% } else { %>
             <%= post.title %>
         <% } %>
@@ -20,9 +24,11 @@
         <% } %>
         <% if (!has_config('article.readtime') || get_config('article.readtime') === true) { %>
         <span class="column is-narrow">
+        <% if (!post.external){ %>
             <% let words = word_count(post._content); %>
-            <% let time = duration((words / 150.0) * 60, 'seconds') %>
+            <% let time = duration((words / 200.0) * 60, 'seconds') %>
             <%= `${ time.humanize() } ${ __('article.read')} (${ __('article.about') } ${ words } ${ __('article.words') })` %>
+        <% } %>
         </span>
         <% } %>
     </div>
@@ -30,7 +36,11 @@
     <% if (post.excerpt && index){ %>
         <%- post.excerpt %>
         <p class="article-more-link">
-            <a href="<%- url_for(post.path) %>#more"><%= __('article.read_more') %></a>
+        <% if (post.external){ %>
+            <a href="<%- post.external %>" target="_blank"><%= get_config('article.readmore') %></a>
+        <% } else { %>
+            <a href="<%- url_for(post.path) %>#more"><%= get_config('article.readmore') %></a>
+        <% } %>
         </p>
     <% } else { %>
         <%- post.content %>

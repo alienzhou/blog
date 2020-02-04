@@ -106,25 +106,11 @@ menu:
   分类: /tags
   关于我: https://about.me/alienzhou
 
-logo:
-  text: AlienZHOU
-
-search:
-  type: insight
-
-comment:
-  type: disqus
-  shortname: friend
-
-toc: true
-
-navbar_links:
-  GitHub:
-    icon: fab fa-github
-    url: https://github.com/alienzhou
-
-footer_links:
-  GitHub: https://github.com/alienzhou
-
 baidu_tongji:
   hm: 64136edb1907ceabdc133e8d5d4566af
+
+# RSS Feed
+feed:
+  type: rss2
+  path: rss.xml
+  limit: 20

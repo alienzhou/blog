@@ -30,6 +30,8 @@ hexo.extend.filter.register('after_post_render', function (data) {
 });
 
 function patchCodeHighlight(content) {
+    content = content.replace(/&lt;/g, '%&-l-t%');
+    content = content.replace(/&gt;/g, '%&-g-t%');
     const $ = cheerio.load(content, { decodeEntities: false });
     $('figure.highlight').addClass('hljs');
     $('figure.highlight .code .line span').each(function () {
@@ -39,7 +41,11 @@ function patchCodeHighlight(content) {
             $(this).removeClass(classes[0]);
         }
     });
-    return $.html();
+    content = $.html();
+    content = content.replace(/%&-l-t%/g, '&lt;');
+    content = content.replace(/%&-g-t%/g, '&gt;');
+
+    return content;
 }
 
 /**

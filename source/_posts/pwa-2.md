@@ -1,5 +1,5 @@
 ---
-title: 【PWA学习与实践】(2) 使用Manifest，让你的WebApp更“Native”
+title: 使用 Manifest，让你的 WebApp 更 Native
 date: 2018-04-07 12:00:00
 tags: PWA
 ---

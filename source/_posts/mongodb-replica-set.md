@@ -1,7 +1,7 @@
 ---
-title: MongoDB高可用__使用Replica Set
+title: 使用 Replica Set 实现 MongoDB 高可用
 date: 2018-05-03 12:00:00
-tags: PWA
+tags: MongoDB
 ---
 
 ![](/img/162a560d0bdaf33c.jpeg)

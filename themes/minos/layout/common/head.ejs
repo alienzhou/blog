@@ -32,6 +32,19 @@ if (languages.length > 1) {
     }) %>
 <% } %>
 
+<% if (has_config('baidu_tongji')) { %>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?<%- get_config('baidu_tongji.hm') %>";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+<% } %>
+
+
 <% if (has_config('rss')) { %>
 <link rel="alternative" href="<%- get_config('rss') %>" title="<%= get_config('title') %>" type="application/atom+xml">
 <% } %>

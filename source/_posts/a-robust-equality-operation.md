@@ -63,13 +63,13 @@ function is(x, y) {
 
 同时，你用 `Number.POSITIVE_INFINITY` 也能获取到该值。
 
-![](https://user-gold-cdn.xitu.io/2020/1/4/16f6f132c0bec8ec?w=436&h=39&f=png&s=3876)
+![](/img/a-robust-equality-operation/16f6f132c0bec8ec.png)
 
 于此对应的，也有个 `Number.NEGATIVE_INFINITY` 的值，实际就是 `-Infinity`。
 
 而 `Infinity` 比较特殊的一点在于，在 JavaScript 中 `1 / Infinity` 与 `-1 / Infinity`。 被认为是相等的（由于 `+0` 和 `-0`，下一节会进一步介绍）
 
-![](https://user-gold-cdn.xitu.io/2020/1/4/16f6f174c669e5f3?w=322&h=41&f=png&s=2913)
+![](/img/a-robust-equality-operation/16f6f174c669e5f3.png)
 
 而在很多场景中，包括像一些 deepEqual 之类的方法中，我们不希望将其判定为相等。学过统计的同学都知道[假设检验中有两类错误](https://en.wikipedia.org/wiki/False_positives_and_false_negatives)：
 
@@ -85,7 +85,7 @@ x !== 0 || y !== 0 || 1 / x === 1 / y
 `1 / Infinity` 与 `-1 / Infinity` 在与 `0` 的相等判断中都会为 `true`
 
 
-![](https://user-gold-cdn.xitu.io/2020/1/4/16f6f2ddd2f954bc?w=574&h=41&f=png&s=4875)
+![](/img/a-robust-equality-operation/16f6f2ddd2f954bc.png)
 
 而其倒数 `Infinity` 与 `-Infinity` 是不相等的，所以避免了 `1 / Infinity` 与 `-1 / Infinity` 的判断问题。
 

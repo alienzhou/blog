@@ -117,7 +117,7 @@ JavaScript 中还有一个叫 [`NaN`](https://developer.mozilla.org/zh-CN/docs/W
 
 它有一个特点 —— 自己不等于自己：
 
-![](https://user-gold-cdn.xitu.io/2020/1/4/16f6f35688449594?w=328&h=36&f=png&s=2128)
+![](/img/a-robust-equality-operation/16f6f35688449594.png)
 
 这可能会导致判断出现 I 类错误（弃真错误）：原本是相同的，却被我们判断为不相同。
 

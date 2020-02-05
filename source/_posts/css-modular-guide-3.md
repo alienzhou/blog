@@ -17,7 +17,7 @@ CSS中虽然有`@import`功能。然而，我们都知道，这里的`@import`�
 
 > What we want is to be able to write code that is as transparent and self-documenting as possible. 
 
-本系列文章会介绍一些业界在探索CSS模块化进程中提出的方案。在前两篇文章中，我介绍了[如果使用BEM与命名空间来规范与架构你的CSS](https://juejin.im/editor/posts/5b20e8e0e51d4506c60e47f5)以及[如何使用Webpack中的CSS modules](https://juejin.im/post/5b234e25e51d45588016caa0)。在这篇文章中，我会介绍styled-components这种CSS in JS方案，以及如何在React中使用。
+本系列文章会介绍一些业界在探索CSS模块化进程中提出的方案。在前两篇文章中，我介绍了[如果使用BEM与命名空间来规范与架构你的CSS](/2018/06/13/css-modular-guide-1/)以及[如何使用Webpack中的CSS modules](/2018/06/15/css-modular-guide-2/)。在这篇文章中，我会介绍styled-components这种CSS in JS方案，以及如何在React中使用。
 
 ## 2. styled-components是什么
 随着React等前端技术的不断流行，组件化的思想开始受到越来越多的人重视。以组件为中心的开发思路使得各种 css-in-js 实践出现。
@@ -268,10 +268,11 @@ injectGlobal`
 ## 参考资料
 
 > 想了解CSS模块化相关内容，可以看看
-> - [【CSS模块化之路1】使用BEM与命名空间来规范CSS](https://juejin.im/post/5b20e8e0e51d4506c60e47f5)
-> - [【CSS模块化之路2】webpack中的Local Scope](https://juejin.im/post/5b234e25e51d45588016caa0)
+> - [【CSS模块化之路1】使用BEM与命名空间来规范CSS](/2018/06/13/css-modular-guide-1/)
+> - [【CSS模块化之路2】webpack中的Local Scope](/2018/06/15/css-modular-guide-2/)
 
 如果你对文中提到一些点感兴趣，也可以在这里进一步阅读相关资料。
+
 - [The magic behind 💅 styled-components](https://mxstbr.blog/2016/11/styled-components-magic-explained/): 介绍了模板字符串对styled-components的重要作用
 - [💅 styled components 💅 — Production Patterns](https://medium.com/@jamiedixon/styled-components-production-patterns-c22e24b1d896): 使用styled components的一些优点
 - [A 5-minute Intro to Styled Components](https://medium.freecodecamp.org/a-5-minute-intro-to-styled-components-41f40eb7cd55)

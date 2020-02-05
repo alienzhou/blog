@@ -54,9 +54,9 @@ Service Worker有一个非常重要的特性：你可以在Service Worker中监�
 了解了基本概念之后，就可以具体来看下，我们如何应用这个技术来实现一个离线可用的Web应用。
 
 ## 3. 如何使用Service Worker实现离线可用的“秒开”应用
-还记得我们之前的那个图书搜索的demo Web App么？不了解的朋友可以看下本系列的[第一篇文章](https://juejin.im/post/5ac8a67c5188255c5668b0b8)，当然你可以忽略细节，继续往下了解技术原理。
+还记得我们之前的那个图书搜索的demo Web App么？不了解的朋友可以看下本系列的[第一篇文章](/2018/04/07/pwa-1/)，当然你可以忽略细节，继续往下了解技术原理。
 
-没错，这次我仍然会基于它进行改造。在[上一篇添加了manifest](https://juejin.im/post/5ac8a89ef265da238440d60a)后，它已经拥有了自己的桌面图标，并有一个很像Native App的外壳；而今天，我会让它变得更酷。
+没错，这次我仍然会基于它进行改造。在[上一篇添加了manifest](/2018/04/07/pwa-2/)后，它已经拥有了自己的桌面图标，并有一个很像Native App的外壳；而今天，我会让它变得更酷。
 
 > 如果想要跟着文章内容一起实践，可以在[这里下载到所需的全部代码](https://github.com/alienzhou/learning-pwa/tree/master)。
 记得切换到`manifest`分支，因为本篇内容，是基于上一篇的最终代码进行相应的开发与升级。毕竟我们的最终目标是将这个普通的“图书搜索”demo升级为PWA。
@@ -319,6 +319,7 @@ function queryBook() {
 ![Service Worker兼容性](/img/162a560d66590ff7.png)
 
 ## 6. 写在最后
+
 本文中所有的代码示例均可以在[learn-pwa/sw-cache](https://github.com/alienzhou/learning-pwa/tree/sw-cache)上找到。注意在git clone之后，切换到sw-cache分支，本文所有的代码均存在于该分支上。切换其他分值可以看到不同的版本：
 - basic分支：基础项目demo，一个普通的图书搜索应用（网站）；
 - manifest分支：基于basic分支，添加manifest等功能，具体可以看上一篇文章了解；
@@ -326,6 +327,8 @@ function queryBook() {
 - master分支：应用的最新代码。
 
 > 最后声明一下，文中的代码作为demo，主要是用于了解与学习PWA技术原理，可能会存在一些不完善的地方，因此，不建议直接使用到生产环境。
+
+欢迎关注[《PWA学习与实践》](/2018/04/07/pwa-1/)系列。
 
 ## 参考资料
 - [Using Service Workers（MDN）](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers)

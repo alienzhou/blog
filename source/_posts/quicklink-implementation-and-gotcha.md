@@ -39,7 +39,7 @@ quicklink 是一个通过预加载资源来提升后续速度的轻量级工具�
 
 我们这里的预加载对应的英文是 prefetch。提到 prefetch 自然会想到使用浏览器的 Resource Hints，通过提示浏览器做一些“预操作”（例如 DNS 解析、资源下载等）来加快后续的访问。
 
-> 如果对 prefetch 与 Resource Hints 不熟悉，可以看看这篇[《使用Resource Hint提升页面加载性能与体验》](https://juejin.im/post/5b4b66f0f265da0f9155feb6#heading-4)。
+> 如果对 prefetch 与 Resource Hints 不熟悉，可以看看这篇[《使用 Resource Hint 提升页面性能与体验》](/2018/07/23/pwa-10/#1-3-Prefetch)。
 
 只需下面一行代码就可以实现浏览器的资源预加载。是不是非常美妙？
 

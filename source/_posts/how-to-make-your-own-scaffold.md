@@ -319,6 +319,6 @@ yo webpack-kickoff
 
 ## 最后
 
-本文通过一个简单的例子来告诉大家如何使用 Yeoman 快速创建脚手架。要了解更多 yeoman-generator 的开发与使用，可以参考[社区里大家写的各类 generator](keywords:yeoman-generator)。目前在 npm 上有超过 8000 个 yeoman-generator，也许就会有你的菜。
+本文通过一个简单的例子来告诉大家如何使用 Yeoman 快速创建脚手架。要了解更多 yeoman-generator 的开发与使用，可以参考[社区里大家写的各类 generator](https://www.npmjs.com/search?q=keywords:yeoman-generator)。目前在 npm 上有超过 8000 个 yeoman-generator，也许就会有你的菜。
 
 > 文中完成的代码请查看 [generator-webpack-kickoff](https://github.com/alienzhou/generator-webpack-kickoff)。

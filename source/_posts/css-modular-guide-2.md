@@ -29,7 +29,7 @@ CSS是一门几十分钟就能入门，但是却需要很长的时间才能掌�
 
 > What we want is to be able to write code that is as transparent and self-documenting as possible. 
 
-本系列文章会介绍一些业界在探索CSS模块化进程中提出的方案。再上一篇文章里我们介绍了[如何使用BEM和命名空间来规范与架构我们的CSS](https://juejin.im/post/5b20e8e0e51d4506c60e47f5)。这一篇文章主要介绍了，如何在webpack中使用一种类似“CSS模块化”的解决方案———Local Scope，来规避一些开发中的问题。
+本系列文章会介绍一些业界在探索CSS模块化进程中提出的方案。再上一篇文章里我们介绍了[如何使用BEM和命名空间来规范与架构我们的CSS](/2018/06/13/css-modular-guide-1/)。这一篇文章主要介绍了，如何在webpack中使用一种类似“CSS模块化”的解决方案———Local Scope，来规避一些开发中的问题。
 
 ## 2. 什么是Local Scope
 通常来说，CSS中的所有选择器可以算是“全局作用域”。而“Local Scope”顾名思义，使CSS具有类似于局部作用域的能力，同时搭配类似JavaScript中模块化的写法，到达CSS模块化的效果。

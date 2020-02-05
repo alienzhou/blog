@@ -8,7 +8,7 @@ tags:
 
 ![](/img/communicating_message.jpg)
 
-在浏览器中，我们可以同时打开多个Tab页，每个Tab页可以粗略理解为一个“独立”的运行环境，即使是全局对象也不会在多个Tab间共享。然而有些时候，我们希望能在这些“独立”的Tab页面之间同步页面的数据、信息或状态。这就是我们所说的前端跨页面通信。
+在浏览器中，我们可以同时打开多个 Tab 页，每个 Tab 页可以粗略理解为一个“独立”的运行环境，即使是全局对象也不会在多个 Tab 间共享。然而有些时候，我们希望能在这些“独立”的 Tab 页面之间同步页面的数据、信息或状态。这就是我们所说的前端跨页面通信。
 
 <!-- more -->
 
@@ -22,7 +22,7 @@ tags:
 
 ## 一、同源页面间的跨页面通信
 
-> 以下各种方式的 [在线 Demo 可以戳这里 >>](https://alienzhou.github.io/cross-tab-communication/)
+> 以下各种方式的 [在线 Demo 可以戳这里 >>](/projects/cross-tab-communication/)
 
 浏览器的[同源策略](https://en.wikipedia.org/wiki/Same-origin_policy)在下述的一些跨页面通信方法中依然存在限制。因此，我们先来看看，在满足同源策略的情况下，都有哪些技术可以用来实现跨页面通信。
 
@@ -30,13 +30,13 @@ tags:
 
 [BroadCast Channel](https://developer.mozilla.org/en-US/docs/Web/API/BroadcastChannel) 可以帮我们创建一个用于广播的通信频道。当所有页面都监听同一频道的消息时，其中某一个页面通过它发送的消息就会被其他所有页面收到。它的API和用法都非常简单。
 
-下面的方式就可以创建一个标识为`AlienZHOU`的频道：
+下面的方式就可以创建一个标识为 `AlienZHOU` 的频道：
 
 ```JavaScript
 const bc = new BroadcastChannel('AlienZHOU');
 ```
 
-各个页面可以通过`onmessage`来监听被广播的消息：
+各个页面可以通过 `onmessage` 来监听被广播的消息：
 
 ```JavaScript
 bc.onmessage = function (e) {
@@ -46,19 +46,19 @@ bc.onmessage = function (e) {
 };
 ```
 
-要发送消息时只需要调用实例上的`postMessage`方法即可：
+要发送消息时只需要调用实例上的 `postMessage` 方法即可：
 
 ```JavaScript
 bc.postMessage(mydata);
 ```
 
-> Broadcast Channel 的具体的使用方式可以看这篇[《【3分钟速览】前端广播式通信：Broadcast Channel》](https://juejin.im/post/5ca1c1b751882543d43f34d5)。
+> Broadcast Channel 的具体的使用方式可以看这篇[《前端广播式通信：Broadcast Channel》](/2019/04/01/broadcast-channel/)。
 
 ### 2. Service Worker
 
 [Service Worker](https://developer.mozilla.org/zh-CN/docs/Web/API/Service_Worker_API) 是一个可以长期运行在后台的 Worker，能够实现与页面的双向通信。多页面共享间的 Service Worker 可以共享，将 Service Worker 作为消息的处理中心（中央站）即可实现广播效果。
 
-> Service Worker 也是 PWA 中的核心技术之一，由于本文重点不在 PWA ，因此如果想进一步了解 Service Worker，可以阅读我之前的文章[【PWA学习与实践】(3) 让你的WebApp离线可用](https://juejin.im/post/5aca14b6f265da237c692e6f)。
+> Service Worker 也是 PWA 中的核心技术之一，由于本文重点不在 PWA ，因此如果想进一步了解 Service Worker，可以阅读我之前的文章[《让你的 Web App 离线可用》](/2018/04/08/pwa-3/)。
 
 首先，需要在页面注册 Service Worker：
 
@@ -88,9 +88,9 @@ self.addEventListener('message', function (e) {
 });
 ```
 
-我们在 Service Worker 中监听了`message`事件，获取页面（从 Service Worker 的角度叫 client）发送的信息。然后通过`self.clients.matchAll()`获取当前注册了该 Service Worker 的所有页面，通过调用每个client（即页面）的`postMessage`方法，向页面发送消息。这样就把从一处（某个Tab页面）收到的消息通知给了其他页面。
+我们在 Service Worker 中监听了 `message` 事件，获取页面（从 Service Worker 的角度叫 client ）发送的信息。然后通过 `self.clients.matchAll()` 获取当前注册了该 Service Worker 的所有页面，通过调用每个 client（即页面）的 `postMessage` 方法，向页面发送消息。这样就把从一处（某个 Tab 页面）收到的消息通知给了其他页面。
 
-处理完 Service Worker，我们需要在页面监听 Service Worker 发送来的消息：
+处理完 Service Worker ，我们需要在页面监听 Service Worker 发送来的消息：
 
 ```JavaScript
 /* 页面逻辑 */
@@ -101,7 +101,7 @@ navigator.serviceWorker.addEventListener('message', function (e) {
 });
 ```
 
-最后，当需要同步消息时，可以调用 Service Worker 的`postMessage`方法：
+最后，当需要同步消息时，可以调用 Service Worker 的 `postMessage` 方法：
 
 ```JavaScript
 /* 页面逻辑 */
@@ -112,7 +112,7 @@ navigator.serviceWorker.controller.postMessage(mydata);
 
 LocalStorage 作为前端最常用的本地存储，大家应该已经非常熟悉了；但[`StorageEvent`](https://developer.mozilla.org/en-US/docs/Web/API/StorageEvent)这个与它相关的事件有些同学可能会比较陌生。
 
-当 LocalStorage 变化时，会触发`storage`事件。利用这个特性，我们可以在发送消息时，把消息写入到某个 LocalStorage 中；然后在各个页面内，通过监听`storage`事件即可收到通知。
+当 LocalStorage 变化时，会触发 `storage` 事件。利用这个特性，我们可以在发送消息时，把消息写入到某个 LocalStorage 中；然后在各个页面内，通过监听 `storage` 事件即可收到通知。
 
 ```JavaScript
 window.addEventListener('storage', function (e) {
@@ -124,25 +124,25 @@ window.addEventListener('storage', function (e) {
 });
 ```
 
-在各个页面添加如上的代码，即可监听到 LocalStorage 的变化。当某个页面需要发送消息时，只需要使用我们熟悉的`setItem`方法即可：
+在各个页面添加如上的代码，即可监听到 LocalStorage 的变化。当某个页面需要发送消息时，只需要使用我们熟悉的 `setItem` 方法即可：
 
 ```JavaScript
 mydata.st = +(new Date);
 window.localStorage.setItem('ctc-msg', JSON.stringify(mydata));
 ```
 
-注意，这里有一个细节：我们在mydata上添加了一个取当前毫秒时间戳的`.st`属性。这是因为，`storage`事件只有在值真正改变时才会触发。举个例子：
+注意，这里有一个细节：我们在mydata上添加了一个取当前毫秒时间戳的 `.st` 属性。这是因为，`storage` 事件只有在值真正改变时才会触发。举个例子：
 
 ```
 window.localStorage.setItem('test', '123');
 window.localStorage.setItem('test', '123');
 ```
 
-由于第二次的值`'123'`与第一次的值相同，所以以上的代码只会在第一次`setItem`时触发`storage`事件。因此我们通过设置`st`来保证每次调用时一定会触发`storage`事件。
+由于第二次的值 `'123'` 与第一次的值相同，所以以上的代码只会在第一次 `setItem` 时触发 `storage` 事件。因此我们通过设置 `st` 来保证每次调用时一定会触发 `storage` 事件。
 
 ### 小憩一下
 
-上面我们看到了三种实现跨页面通信的方式，不论是建立广播频道的 Broadcast Channel，还是使用 Service Worker 的消息中转站，抑或是些 tricky 的`storage`事件，其都是“广播模式”：一个页面将消息通知给一个“中央站”，再由“中央站”通知给各个页面。
+上面我们看到了三种实现跨页面通信的方式，不论是建立广播频道的 Broadcast Channel，还是使用 Service Worker 的消息中转站，抑或是些 tricky 的 `storage` 事件，其都是“广播模式”：一个页面将消息通知给一个“中央站”，再由“中央站”通知给各个页面。
 
 > 在上面的例子中，这个“中央站”可以是一个 BroadCast Channel 实例、一个 Service Worker 或是 LocalStorage。
 
@@ -156,7 +156,7 @@ window.localStorage.setItem('test', '123');
 
 Shared Worker 在实现跨页面通信时的问题在于，它无法主动通知所有页面，因此，我们会使用轮询的方式，来拉取最新的数据。思路如下：
 
-让 Shared Worker 支持两种消息。一种是 post，Shared Worker 收到后会将该数据保存下来；另一种是 get，Shared Worker 收到该消息后会将保存的数据通过`postMessage`传给注册它的页面。也就是让页面通过 get 来主动获取（同步）最新消息。具体实现如下：
+让 Shared Worker 支持两种消息。一种是 post，Shared Worker 收到后会将该数据保存下来；另一种是 get，Shared Worker 收到该消息后会将保存的数据通过 `postMessage` 传给注册它的页面。也就是让页面通过 get 来主动获取（同步）最新消息。具体实现如下：
 
 首先，我们会在页面中启动一个 Shared Worker，启动方式非常简单：
 
@@ -203,13 +203,13 @@ sharedWorker.port.addEventListener('message', (e) => {
 sharedWorker.port.start();
 ```
 
-最后，当要跨页面通信时，只需给 Shared Worker `postMessage`即可：
+最后，当要跨页面通信时，只需给 Shared Worker `postMessage` 即可：
 
 ```JavaScript
 sharedWorker.port.postMessage(mydata);
 ```
 
-> 注意，如果使用`addEventListener`来添加 Shared Worker 的消息监听，需要显式调用`MessagePort.start`方法，即上文中的`sharedWorker.port.start()`；如果使用`onmessage`绑定监听则不需要。
+> 注意，如果使用 `addEventListener` 来添加 Shared Worker 的消息监听，需要显式调用 `MessagePort.start` 方法，即上文中的 `sharedWorker.port.start()` ；如果使用 `onmessage` 绑定监听则不需要。
 
 ### 5. IndexedDB
 
@@ -314,7 +314,7 @@ openStore().then(db => saveData(db, null)).then(function (db) {
 
 在“广播模式”外，我们又了解了“共享存储+长轮询”这种模式。也许你会认为长轮询没有监听模式优雅，但实际上，有些时候使用“共享存储”的形式时，不一定要搭配长轮询。
 
-例如，在多 Tab 场景下，我们可能会离开 Tab A 到另一个 Tab B 中操作；过了一会我们从 Tab B 切换回 Tab A 时，希望将之前在 Tab B 中的操作的信息同步回来。这时候，其实只用在 Tab A 中监听`visibilitychange`这样的事件，来做一次信息同步即可。
+例如，在多 Tab 场景下，我们可能会离开 Tab A 到另一个 Tab B 中操作；过了一会我们从 Tab B 切换回 Tab A 时，希望将之前在 Tab B 中的操作的信息同步回来。这时候，其实只用在 Tab A 中监听 `visibilitychange` 这样的事件，来做一次信息同步即可。
 
 下面，我会再介绍一种通信方式，我把它称为“口口相传”模式。
 
@@ -322,9 +322,9 @@ openStore().then(db => saveData(db, null)).then(function (db) {
 
 ### 6. window.open + window.opener
 
-当我们使用`window.open`打开页面时，方法会返回一个被打开页面`window`的引用。而在未显示指定`noopener`时，被打开的页面可以通过`window.opener`获取到打开它的页面的引用 —— 通过这种方式我们就将这些页面建立起了联系（一种树形结构）。
+当我们使用 `window.open` 打开页面时，方法会返回一个被打开页面 `window` 的引用。而在未显示指定 `noopener` 时，被打开的页面可以通过 `window.opener` 获取到打开它的页面的引用 —— 通过这种方式我们就将这些页面建立起了联系（一种树形结构）。
 
-首先，我们把`window.open`打开的页面的`window`对象收集起来：
+首先，我们把 `window.open` 打开的页面的 `window` 对象收集起来：
 
 ```JavaScript
 let childWins = [];
@@ -349,7 +349,7 @@ if (window.opener && !window.opener.closed) {
 }
 ```
 
-注意，我这里先用`.closed`属性过滤掉已经被关闭的 Tab 窗口。这样，作为消息发送方的任务就完成了。下面看看，作为消息接收方，它需要做什么。
+注意，我这里先用 `.closed` 属性过滤掉已经被关闭的 Tab 窗口。这样，作为消息发送方的任务就完成了。下面看看，作为消息接收方，它需要做什么。
 
 此时，一个收到消息的页面就不能那么自私了，除了展示收到的消息，它还需要将消息再传递给它所“知道的人”（打开与被它打开的页面）:
 
@@ -377,11 +377,11 @@ window.addEventListener('message', function (e) {
 
 ### 小憩一下
 
-显然，“口口相传”的模式存在一个问题：如果页面不是通过在另一个页面内的`window.open`打开的（例如直接在地址栏输入，或从其他网站链接过来），这个联系就被打破了。
+显然，“口口相传”的模式存在一个问题：如果页面不是通过在另一个页面内的 `window.open` 打开的（例如直接在地址栏输入，或从其他网站链接过来），这个联系就被打破了。
 
 除了上面这六个常见方法，其实还有一种（第七种）做法是通过 WebSocket 这类的“服务器推”技术来进行同步。这好比将我们的“中央站”从前端移到了后端。
 
-关于 WebSocket 与其他“服务器推”技术，不了解的同学可以阅读这篇[《各类“服务器推”技术原理与实例（Polling/COMET/SSE/WebSocket）》](https://juejin.im/post/5b135b78f265da6e420eab7d)
+关于 WebSocket 与其他“服务器推”技术，不了解的同学可以阅读这篇[《各类“服务器推”技术原理与实例》](/2018/06/08/server-push-methods/)
 
 此外，我还针对以上各种方式写了一个 [在线演示的 Demo >>](https://alienzhou.github.io/cross-tab-communication/)
 
@@ -393,7 +393,7 @@ window.addEventListener('message', function (e) {
 
 上面我们介绍了七种前端跨页面通信的方法，但它们大都受到同源策略的限制。然而有时候，我们有两个不同域名的产品线，也希望它们下面的所有页面之间能无障碍地通信。那该怎么办呢？
 
-要实现该功能，可以使用一个用户不可见的 iframe 作为“桥”。由于 iframe 与父页面间可以通过指定`origin`来忽略同源限制，因此可以在每个页面中嵌入一个 iframe （例如：`http://sample.com/bridge.html`），而这些 iframe 由于使用的是一个 url，因此属于同源页面，其通信方式可以复用上面第一部分提到的各种方式。
+要实现该功能，可以使用一个用户不可见的 iframe 作为“桥”。由于 iframe 与父页面间可以通过指定 `origin` 来忽略同源限制，因此可以在每个页面中嵌入一个 iframe（例如：`http://sample.com/bridge.html` ），而这些 iframe 由于使用的是一个 url，因此属于同源页面，其通信方式可以复用上面第一部分提到的各种方式。
 
 页面与 iframe 通信非常简单，首先需要在页面中监听 iframe 发来的消息，做相应的业务处理：
 
@@ -411,7 +411,7 @@ window.addEventListener('message', function (e) {
 window.frames[0].window.postMessage(mydata, '*');
 ```
 
-其中为了简便此处将`postMessage`的第二个参数设为了`'*'`，你也可以设为 iframe 的 URL。iframe 收到消息后，会使用某种跨页面消息通信技术在所有 iframe 间同步消息，例如下面使用的 Broadcast Channel：
+其中为了简便此处将 `postMessage` 的第二个参数设为了 `'*'` ，你也可以设为 iframe 的 URL 。iframe 收到消息后，会使用某种跨页面消息通信技术在所有 iframe 间同步消息，例如下面使用的 Broadcast Channel ：
 
 ```JavaScript
 /* iframe 内代码 */
@@ -452,8 +452,3 @@ bc.onmessage = function (e) {
 - 基于服务端：Websocket / Comet / SSE 等
 
 而对于非同源页面，则可以通过嵌入同源 iframe 作为“桥”，将非同源页面通信转换为同源页面通信。
-
-> 对文章感兴趣的同学欢迎关注 [我的博客 >> https://github.com/alienzhou/blog](https://github.com/alienzhou/blog)
-
-本文在分享的同时，也是为了抛转引玉。如果你有什么其他想法，欢迎一起讨论，提出你的见解和想法~
-

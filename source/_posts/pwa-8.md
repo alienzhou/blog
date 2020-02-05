@@ -444,22 +444,9 @@ self.addEventListener('sync', function (e) {
 
 本文中所有的代码示例均可以在[learn-pwa/sync](https://github.com/alienzhou/learning-pwa/tree/sync)上找到。
 
-如果你喜欢或想要了解更多的PWA相关知识，欢迎关注我，关注[《PWA学习与实践》](https://juejin.im/user/59ad5377518825244d206d2d/posts)系列文章。我会总结整理自己学习PWA过程的遇到的疑问与技术点，并通过实际代码和大家一起实践。
+如果你喜欢或想要了解更多的PWA相关知识，欢迎关注我，关注[《PWA学习与实践》](/2018/04/07/pwa-1/)系列文章。我会总结整理自己学习PWA过程的遇到的疑问与技术点，并通过实际代码和大家一起实践。
 
 到目前为止，我们已经学习了PWA中的多个知识点，在其基础上，已经可以帮助我们进行原有站点的PWA升级。学习是一方面，实践是另一方面。在下一篇文章里，我会整理一些在业务中升级PWA时碰到的问题，以及对应的解决方案。
-
-## 《PWA学习与实践》系列
-- [第一篇：2018，开始你的PWA学习之旅](https://juejin.im/post/5ac8a67c5188255c5668b0b8)
-- [第二篇：10分钟学会使用Manifest，让你的WebApp更“Native”](https://juejin.im/post/5ac8a89ef265da238440d60a)
-- [第三篇：从今天起，让你的WebApp离线可用](https://juejin.im/post/5aca14b6f265da237c692e6f)
-- [第四篇：TroubleShooting: 解决FireBase login验证失败问题](https://juejin.im/post/5accc3c9f265da23870f2abc)
-- [第五篇：与你的用户保持联系: Web Push功能](https://juejin.im/post/5accd1355188252b0b201fb9)
-- [第六篇：How to Debug? 在chrome中调试你的PWA](https://juejin.im/post/5ae56f926fb9a07aca79edf6)
-- [第七篇：增强交互：使用Notification API来进行提醒](https://juejin.im/post/5ae7f7fd518825670960fe96)
-- 第八篇：使用Service Worker进行后台数据同步（本文）
-- [第九篇：PWA实践中的问题与解决方案](https://juejin.im/post/5b02e5f1f265da0b767dc81d)
-- [第十篇：Resource Hint - 提升页面加载性能与体验](https://juejin.im/post/5b4b66f0f265da0f9155feb6)
-- 第十一篇：从PWA离线工具集workbox中学习各类离线策略（写作中…）
 
 ## 参考资料
 - [Web Background Synchronization](https://wicg.github.io/BackgroundSync/spec/)

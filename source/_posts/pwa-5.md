@@ -349,14 +349,16 @@ const options = {
 虽然由于google服务被屏蔽，导致国内Push功能无法在chrome上使用，但是作为一个重要的技术点，Web Push还是非常值得我们了解与学习的。
 
 ## 6. 写在最后
+
 本文中所有的代码示例均可以在[learn-pwa/push](https://github.com/alienzhou/learning-pwa/tree/push)上找到。注意在git clone之后，切换到push分支。切换其他分支可以看到不同的版本：
+
 - basic分支：基础项目demo，一个普通的图书搜索应用（网站）；
 - manifest分支：基于basic分支，添加manifest等功能；
 - sw-cache分支：基于manifest分支，添加缓存与离线功能；
 - push分支：基于sw-cache分支，添加服务端消息推送功能；
 - master分支：应用的最新代码。
 
-如果你喜欢或想要了解更多的PWA相关知识，欢迎关注我，关注《PWA学习与实践》系列文章。我会总结整理自己学习PWA过程的遇到的疑问与技术点，并通过实际代码和大家一起实践。
+如果你喜欢或想要了解更多的PWA相关知识，欢迎关注我，关注[《PWA学习与实践》](/2018/04/07/pwa-1/)系列文章。我会总结整理自己学习PWA过程的遇到的疑问与技术点，并通过实际代码和大家一起实践。
 
 在下一篇文章里，我们先缓下脚步——工欲善其事，必先利其器。在继续了解更多PWA相关技术之前，先了解一些chrome上的PWA调试技巧。之后，我们会再回来继续了解另一个经常与Push API组合在一起的功能——消息提醒，Notification API。
 

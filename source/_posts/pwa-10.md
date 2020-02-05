@@ -234,7 +234,7 @@ Preload（包括前文提到的Prefetch等RHL）给我们带来的价值就是�
 - Prerender 则会更进一步，不仅获取资源，还会预加载（执行）部分资源，因此如果我们Prerender下一个页面，打开该页面时会让用户感觉非常流畅；
 - Preload 则像是 Prefetch的升级版，会强制立即高优获取资源，非常适合Preload（尽早获取）一些关键渲染路径中的资源。
 
-虽然，大部分PWA相关资料中并不会提及Resource Hint，但是正如我在[第一篇文章](https://juejin.im/post/5ac8a67c5188255c5668b0b8)中提到的
+虽然，大部分PWA相关资料中并不会提及Resource Hint，但是正如我在[第一篇文章](/2018/04/07/pwa-1/)中提到的
 
 > PWA本身其实是一个概念集合，它不是指某一项技术，而是通过一系列的Web技术与Web标准来优化Web App的安全、性能和体验。
 
@@ -243,20 +243,6 @@ Resource Hint显然符合这一点。
 我们不应该将PWA局限在Service Worker离线缓存、提醒通知这些常见的PWA内容中，希望读者也能开阔思维，理解PWA背后的概念与思想。因此，在后续文章中我也会介绍前端存储(sessionStorage/localStorage/indexDB)、HTTP/2.0以及PWA进展等相关内容。
 
 在下一篇里，我们会一起来学习Google开源的PWA离线工具集 —— workbox。通过workbox，我们可以学习<u>**各类离线策略**</u>，并且了解一些生产环境中需要考虑的问题。部分开源PWA解决方案也是基于workbox进行封装的。
-
-
-## 《PWA学习与实践》系列
-- [第一篇：2018，开始你的PWA学习之旅](https://juejin.im/post/5ac8a67c5188255c5668b0b8)
-- [第二篇：10分钟学会使用Manifest，让你的WebApp更“Native”](https://juejin.im/post/5ac8a89ef265da238440d60a)
-- [第三篇：从今天起，让你的WebApp离线可用](https://juejin.im/post/5aca14b6f265da237c692e6f)
-- [第四篇：TroubleShooting: 解决FireBase login验证失败问题](https://juejin.im/post/5accc3c9f265da23870f2abc)
-- [第五篇：与你的用户保持联系: Web Push功能](https://juejin.im/post/5accd1355188252b0b201fb9)
-- [第六篇：How to Debug? 在chrome中调试你的PWA](https://juejin.im/post/5ae56f926fb9a07aca79edf6)
-- [第七篇：增强交互：使用Notification API来进行提醒](https://juejin.im/post/5ae7f7fd518825670960fe96)
-- [第八篇：使用Service Worker进行后台数据同步](https://juejin.im/post/5af80c336fb9a07aab29f19c)
-- [第九篇：PWA实践中的问题与解决方案](https://juejin.im/post/5b02e5f1f265da0b767dc81d)
-- 第十篇：Resource Hint - 提升页面加载性能与体验（本文）
-- 第十一篇：从PWA离线工具集workbox中学习各类离线策略（写作中…）
 
 ## 参考资料
 

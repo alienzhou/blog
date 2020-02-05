@@ -10,7 +10,7 @@ tags:
 
 PWA作为今年最火热的技术概念之一，对提升Web应用的安全、性能和体验有着很大的意义，非常值得我们去了解与学习。
 
-本系列文章[《PWA学习与实践》](https://juejin.im/user/59ad5377518825244d206d2d/posts)会逐步拆解PWA背后的各项技术，通过实例代码来讲解这些技术的应用方式。也正是因为PWA中技术点众多、知识细碎，因此我在学习过程中，进行了整理，并产出了《PWA学习与实践》系列文章，希望能带大家全面了解PWA中的各项技术。对PWA感兴趣的朋友欢迎关注。
+本系列文章《PWA学习与实践》会逐步拆解PWA背后的各项技术，通过实例代码来讲解这些技术的应用方式。也正是因为PWA中技术点众多、知识细碎，因此我在学习过程中，进行了整理，并产出了《PWA学习与实践》系列文章，希望能带大家全面了解PWA中的各项技术。对PWA感兴趣的朋友欢迎关注。
 
 首先简单了解一下PWA。
 
@@ -84,19 +84,20 @@ npm run start
 - master分支：应用的最新代码。
 - ……
 
-作为本系列的第一篇文章，本文简单介绍了PWA与其相关的技术概念。通过学习PWA，我们可以很快将其中的优秀技术应用到我们的工作里。在[下一篇文章](https://juejin.im/post/5ac8a89ef265da238440d60a)中，我就会介绍如何使用manifest来让你的Web App“更Native”，拥有一个App Shell。想了解PWA更多的后续知识，关注[《PWA学习与实践》](https://juejin.im/user/59ad5377518825244d206d2d/posts)系列文章。
+作为本系列的第一篇文章，本文简单介绍了PWA与其相关的技术概念。通过学习PWA，我们可以很快将其中的优秀技术应用到我们的工作里。在[下一篇文章](/2018/04/07/pwa-2/)中，我就会介绍如何使用manifest来让你的Web App“更Native”，拥有一个App Shell。想了解PWA更多的后续知识，关注《PWA学习与实践》系列文章。
 
 话不多说，下面就让我们来具体地学习PWA相关技术吧！
 
 ## 《PWA技术学习与实践》系列文章
+
 - 第一篇：2018，开始你的PWA学习之旅（本文）
-- [第二篇：10分钟学会使用Manifest，让你的WebApp更“Native”](https://juejin.im/post/5ac8a89ef265da238440d60a)
-- [第三篇：从今天开始，让你的WebApp离线可用](https://juejin.im/post/5aca14b6f265da237c692e6f)
-- [第四篇：TroubleShooting: 解决FireBase login验证失败问题](https://juejin.im/post/5accc3c9f265da23870f2abc)
-- [第五篇：与你的用户保持联系: Web Push功能](https://juejin.im/post/5accd1355188252b0b201fb9)
-- [第六篇：How to Debug? 在chrome中调试你的PWA](https://juejin.im/post/5ae56f926fb9a07aca79edf6)
-- [第七篇：增强交互：使用Notification API来进行提醒](https://juejin.im/post/5ae7f7fd518825670960fe96)
-- [第八篇：使用Service Worker进行后台数据同步](https://juejin.im/post/5af80c336fb9a07aab29f19c)
-- [第九篇：PWA实践中的问题与解决方案](https://juejin.im/post/5b02e5f1f265da0b767dc81d)
-- [第十篇：Resource Hint - 提升页面加载性能与体验](https://juejin.im/post/5b4b66f0f265da0f9155feb6)
+- [第二篇：10分钟学会使用Manifest，让你的WebApp更“Native”](/2018/04/07/pwa-2/)
+- [第三篇：从今天开始，让你的WebApp离线可用](/2018/04/08/pwa-3/)
+- [第四篇：TroubleShooting: 解决FireBase login验证失败问题](/2018/04/10/pwa-4/)
+- [第五篇：与你的用户保持联系: Web Push功能](/2018/04/14/pwa-5/)
+- [第六篇：How to Debug? 在chrome中调试你的PWA](/2018/05/01/pwa-6/)
+- [第七篇：增强交互：使用Notification API来进行提醒](/2018/05/01/pwa-7/)
+- [第八篇：使用Service Worker进行后台数据同步](/2018/05/14/pwa-8/)
+- [第九篇：PWA实践中的问题与解决方案](/2018/05/26/pwa-9/)
+- [第十篇：Resource Hint - 提升页面加载性能与体验](/2018/07/23/pwa-10/)
 - 第十一篇：从PWA离线工具集workbox中学习各类离线策略（写作中…）

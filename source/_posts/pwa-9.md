@@ -110,7 +110,7 @@ options: {
 
 ### 2.1. 遇到的问题
 
-在[《【PWA学习与实践】(3) 让你的WebApp离线可用》](https://juejin.im/post/5aca14b6f265da237c692e6f)中我介绍了如何用Service Worker进行缓存以实现离线功能。其中，为了提高体验，我们会在Service Worker安装时缓存静态文件，实现这一功能的部分代码如下：
+在[《让你的 Web App 离线可用》](/2018/04/08/pwa-3/)中我介绍了如何用Service Worker进行缓存以实现离线功能。其中，为了提高体验，我们会在Service Worker安装时缓存静态文件，实现这一功能的部分代码如下：
 
 ```javascript
 // 监听install事件，安装完成后，进行文件缓存
@@ -155,7 +155,7 @@ self.addEventListener('install', e => {
 
 今年年初Apple宣布在iOS safari 11.3中支持Service Worker，这对PWA的推广起到了重要的作用，让我们可以“跨平台”来实现PWA技术。
 
-虽然，iOS safari不支持manifest配置来实现添加到桌面，但是我在[《【PWA学习与实践】(2) 使用Manifest，让你的WebApp更“Native”》](https://juejin.im/post/5ac8a89ef265da238440d60a)中介绍了如何用safari自有的meta标签来实现standalone模式。
+虽然，iOS safari不支持manifest配置来实现添加到桌面，但是我在[《使用 Manifest，让你的 WebApp 更 Native》](/2018/04/07/pwa-2/)中介绍了如何用safari自有的meta标签来实现standalone模式。
 
 不过，问题就出在了standalone模式上。抛开iOS safari standalone模式现有的一些其他小bug（包括状态栏的显示、白屏、重复添加等），iOS safari standalone模式有一个无法回避的重大问题。其源于iOS与android的一个重要区别：
 
@@ -264,23 +264,9 @@ self.addEventListener('fetch', e => {
 
 ## 5. 写在最后
 
-本文总结了一些我在进行PWA升级实践中遇到的问题，希望对遇到类似问题的朋友能够有一些启发或帮助。
+本文总结了一些我在进行PWA升级实践中遇到的问题，希望对遇到类似问题的朋友能够有一些启发或帮助。如果你喜欢或想要了解更多的PWA相关知识，欢迎关注我，关注[《PWA学习与实践》](/2018/04/07/pwa-1/)系列文章。我会总结整理自己学习PWA过程的遇到的疑问与技术点，并通过实际代码和大家一起实践。
 
 在下一篇文章中，我会回到PWA相关技术，介绍Resource Hint，以及如何使用Resource Hint来提高页面的加载性能，提升用户体验。
-
-
-## 《PWA学习与实践》系列
-- [第一篇：2018，开始你的PWA学习之旅](https://juejin.im/post/5ac8a67c5188255c5668b0b8)
-- [第二篇：10分钟学会使用Manifest，让你的WebApp更“Native”](https://juejin.im/post/5ac8a89ef265da238440d60a)
-- [第三篇：从今天起，让你的WebApp离线可用](https://juejin.im/post/5aca14b6f265da237c692e6f)
-- [第四篇：TroubleShooting: 解决FireBase login验证失败问题](https://juejin.im/post/5accc3c9f265da23870f2abc)
-- [第五篇：与你的用户保持联系: Web Push功能](https://juejin.im/post/5accd1355188252b0b201fb9)
-- [第六篇：How to Debug? 在chrome中调试你的PWA](https://juejin.im/post/5ae56f926fb9a07aca79edf6)
-- [第七篇：增强交互：使用Notification API来进行提醒](https://juejin.im/post/5ae7f7fd518825670960fe96)
-- [第八篇：使用Service Worker进行后台数据同步](https://juejin.im/post/5af80c336fb9a07aab29f19c)
-- 第九篇：PWA实践中的问题与解决方案（本文）
-- [第十篇：Resource Hint - 提升页面加载性能与体验](https://juejin.im/post/5b4b66f0f265da0f9155feb6)
-- 第十一篇：从PWA离线工具集workbox中学习各类离线策略（写作中…）
 
 ## 参考资料
 ### Service Worker Scope

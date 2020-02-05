@@ -9,7 +9,7 @@ tags: PWA
 <!-- more -->
 
 ## 1. 引言
-在第五篇文章[《Web中进行服务端消息推送》](https://juejin.im/post/5accd1355188252b0b201fb9)中，我介绍了如何使用Push API进行服务端消息推送。提到Push就不得不说与其联系紧密的另一个API——Notification API。它让我们可以在“网站外”显示消息提示：
+在第五篇文章[《Web中进行服务端消息推送》](/2018/04/14/pwa-5/)中，我介绍了如何使用Push API进行服务端消息推送。提到Push就不得不说与其联系紧密的另一个API——Notification API。它让我们可以在“网站外”显示消息提示：
 
 ![](/img/1631a562ba773ddd.gif)
 
@@ -218,7 +218,8 @@ navigator.serviceWorker.addEventListener('message', function (e) {
 然而目前的消息提醒还存在一定的局限性。例如，只有在用户访问网站期间才能有机会触发提醒。正如本文一开始所说，Push & Notification的结合将会帮助我们构筑一个强大推送与提醒功能。下面就来看下它们的简单结合。
 
 ## 3. 消息推送与提醒
-在第五篇[《Web中进行服务端消息推送》](https://juejin.im/post/5accd1355188252b0b201fb9)最后，我们通过监听`push`事件来处理服务端推送：
+
+在第五篇[《Web中进行服务端消息推送》](/2018/04/14/pwa-5/)最后，我们通过监听`push`事件来处理服务端推送：
 
 ```javascript
 // sw.js
@@ -369,28 +370,17 @@ notification.addEventListener('click', function (e) {
 该功能示例可以在[learn-pwa/notify4safari](https://github.com/alienzhou/learning-pwa/tree/notify4safari)中找到。
 
 ## 5. 写在最后
+
 Web Notification是一个非常强大的API，尤其在和Push结合后，为WebApp带来了类似Native的丰富能力。
 
 本文中所有的代码示例均可以在[learn-pwa/notification](https://github.com/alienzhou/learning-pwa/tree/notification)上找到。
 
-如果你喜欢或想要了解更多的PWA相关知识，欢迎关注我，关注[《PWA学习与实践》](https://juejin.im/user/59ad5377518825244d206d2d/posts)系列文章。我会总结整理自己学习PWA过程的遇到的疑问与技术点，并通过实际代码和大家一起实践。
+如果你喜欢或想要了解更多的PWA相关知识，欢迎关注我，关注[《PWA学习与实践》](/2018/04/07/pwa-1/)系列文章。我会总结整理自己学习PWA过程的遇到的疑问与技术点，并通过实际代码和大家一起实践。
 
-到目前为止，我们已经学习了[Manifest](https://juejin.im/post/5ac8a89ef265da238440d60a)、[离线缓存](https://juejin.im/post/5aca14b6f265da237c692e6f)、[消息推送](https://juejin.im/post/5accd1355188252b0b201fb9)、消息提醒、[Debug](https://juejin.im/post/5ae56f926fb9a07aca79edf6)等一些基础知识。在下一篇文章里，我们会继续了解与学习PWA中的一个重要功能——后台同步。
-
-## 《PWA学习与实践》系列
-- [第一篇：2018，开始你的PWA学习之旅](https://juejin.im/post/5ac8a67c5188255c5668b0b8)
-- [第二篇：10分钟学会使用Manifest，让你的WebApp更“Native”](https://juejin.im/post/5ac8a89ef265da238440d60a)
-- [第三篇：从今天起，让你的WebApp离线可用](https://juejin.im/post/5aca14b6f265da237c692e6f)
-- [第四篇：TroubleShooting: 解决FireBase login验证失败问题](https://juejin.im/post/5accc3c9f265da23870f2abc)
-- [第五篇：与你的用户保持联系: Web Push功能](https://juejin.im/post/5accd1355188252b0b201fb9)
-- [第六篇：How to Debug? 在chrome中调试你的PWA](https://juejin.im/post/5ae56f926fb9a07aca79edf6)
-- 第七篇：增强交互：使用Notification API来进行提醒（本文）
-- [第八篇：使用Service Worker进行后台数据同步](https://juejin.im/post/5af80c336fb9a07aab29f19c)
-- [第九篇：PWA实践中的问题与解决方案](https://juejin.im/post/5b02e5f1f265da0b767dc81d)
-- [第十篇：Resource Hint - 提升页面加载性能与体验](https://juejin.im/post/5b4b66f0f265da0f9155feb6)
-- 第十一篇：从PWA离线工具集workbox中学习各类离线策略（写作中…）
+到目前为止，我们已经学习了[Manifest](/2018/04/07/pwa-2/)、[离线缓存](/2018/04/08/pwa-3/)、[消息推送](/2018/04/14/pwa-5/)、消息提醒（本文）、[Debug](/2018/05/01/pwa-6/)等一些基础知识。在下一篇文章里，我们会继续了解与学习PWA中的一个重要功能——后台同步。
 
 ## 参考资料
+
 - [MDN: notification](https://developer.mozilla.org/zh-CN/docs/Web/API/notification)
 - [MDN: ServiceWorkerRegistration.showNotification()](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/showNotification)
 - [MDN: WindowClient](https://developer.mozilla.org/en-US/docs/Web/API/WindowClient)

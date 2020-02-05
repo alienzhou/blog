@@ -61,7 +61,7 @@ webpack编译流程非常复杂，但其中涉及loader的部分主要包括了�
 
 webpack和其他工具一样，都是通过配置的方式来工作的。随着webpack的不断进化，其默认配置也在不断变动；而曾经版本中的某些最佳实践，也随着版本的升级进入了webpack的默认配置。
 
-webpack的入口文件是`lib/webpack.js`，会根据配置文件，设置编译时的配置options [(source code)](https://github.com/webpack/webpack/blob/master/lib/webpack.js#L37-L40)（上一篇[《可视化展示webpack内部插件与钩子关系📈》](https://juejin.im/post/5bb06c55e51d450e7c0d8ab9)提到的plugin也是在这里触发的）
+webpack的入口文件是`lib/webpack.js`，会根据配置文件，设置编译时的配置options [(source code)](https://github.com/webpack/webpack/blob/master/lib/webpack.js#L37-L40)（上一篇[《可视化 webpack 内部插件与钩子关系📈》](/2018/09/30/webpack-plugin-hooks-visualization/)提到的plugin也是在这里触发的）
 
 ```javascript
 options = new WebpackOptionsDefaulter().process(options);
@@ -517,13 +517,7 @@ webpack是一个强大而复杂的前端自动化工具。其中一个特点就�
 
 欢迎感兴趣的同学多多交流与关注！
 
-> 往期文章：
-> - [【webpack进阶】前端运行时的模块化设计与实现](https://juejin.im/post/5b82ac82f265da431d0e6d25)
-> - [【webpack进阶】使用babel避免webpack编译运行时模块依赖](https://juejin.im/post/5b76d49ef265da43231ef7bd)
-> - [【webpack进阶】可视化展示webpack内部插件与钩子关系📈](https://juejin.im/post/5bb06c55e51d450e7c0d8ab9)
-
-
-
-
-
-
+> 【webpack进阶】往期文章：
+> - [webpack 前端运行时的模块化设计与实现](/2018/08/27/webpack-module-runtime/)
+> - [使用 Babel 避免 webpack 编译模块依赖](/2018/08/19/webpack-babel-transform/)
+> - [可视化 webpack 内部插件与钩子关系📈](/2018/09/30/webpack-plugin-hooks-visualization/)

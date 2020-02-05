@@ -31,7 +31,7 @@ Repo 里有一句话概述了它的功能：
 
 举个例子来说 ——
 
-假设在当前目录（`demo/`）现在，我们有三个“模块”文件：
+假设在当前目录（ `demo/` ）现在，我们有三个“模块”文件：
 
 `demo/plus.js`：
 
@@ -61,7 +61,7 @@ console.log(divide(12, add(1, 2)));
 // output: 4
 ```
 
-常见用法是指定入口，用 webpack 编译成一个 bundle，然后浏览器引用。而 one-click.js 让你可以抛弃这些，只需要在 HTML 中这么用：
+常见用法是指定入口，用 webpack 编译成一个 bundle ，然后浏览器引用。而 one-click.js 让你可以抛弃这些，只需要在 HTML 中这么用：
 
 ```HTML
 <!DOCTYPE html>
@@ -114,7 +114,7 @@ console.log(divide(12, add(1, 2)));
 // output: 4
 ```
 
-回忆一下，当我们使用 webpack 时，会指定入口（main.js）。webpack 会根据该入口打包出一个 bundle（例如 bundle.js）。最后我们在页面中引入处理好的 bundle.js 即可。这时的 bundle.js 除了源码，已经加了很多 webpack 的“私货”。
+回忆一下，当我们使用 webpack 时，会指定入口（ main.js ）。webpack 会根据该入口打包出一个 bundle（例如 bundle.js ）。最后我们在页面中引入处理好的 bundle.js 即可。这时的 bundle.js 除了源码，已经加了很多 webpack 的“私货”。
 
 简单理一理其中 webpack 涉及到的工作：
 
@@ -122,7 +122,7 @@ console.log(divide(12, add(1, 2)));
 2. **作用域隔离与变量注入**：对于每个模块文件，webpack 都会将其包裹在一个 function 中。这样既可以做到 `module`、`require` 等变量的注入，又可以隔离作用域，防止变量的全局污染。
 3. **提供模块运行时**：最后，为了 `require`、`exports` 的有效执行，还需要提供一套运行时代码，来实现模块的加载、执行、导出等功能。
 
-> 如果对以上的 2、3 项不太了解，可以从篇文章中了解 [webpack 的模块运行时设计](https://juejin.im/post/5b82ac82f265da431d0e6d25#heading-3)。
+> 如果对以上的 2、3 项不太了解，可以从篇文章中了解 [webpack 的模块运行时设计](/2018/08/27/webpack-module-runtime/#3-webpack实现的前端模块化)。
 
 ## 3. 我们面对的挑战
 
@@ -215,7 +215,7 @@ var foo = 123;
 
 当其加载进浏览器时，`foo` 变量实际会变成一个全局变量，可以通过 `window.foo` 访问到，这也会带来全局污染，模块间的变量、方法都可能互相冲突与覆盖。
 
-在 NodeJS 环境下，由于使用 CommonJS 规范，同样像上面这样的模块文件被导入时， `foo` 变量的作用域只在源模块中，不会污染全局。而 NodeJS 在实现上其实就是[用一个 wrap function 包裹了模块内的代码](https://juejin.im/post/5b82ac82f265da431d0e6d25#heading-2)，我们都知道，function 会形成其自己的作用域，因此就实现了隔离。
+在 NodeJS 环境下，由于使用 CommonJS 规范，同样像上面这样的模块文件被导入时， `foo` 变量的作用域只在源模块中，不会污染全局。而 NodeJS 在实现上其实就是[用一个 wrap function 包裹了模块内的代码](/2018/08/27/webpack-module-runtime/#2-NodeJS中的模块化)，我们都知道，function 会形成其自己的作用域，因此就实现了隔离。
 
 NodeJS 会在 `require` 时对源码文件进行包装，而 webpack 这类打包工具会在编译期对源码文件进行改写（也是类似的包装）。而 one-click.js 没有编译工具，那编译期改写肯定行不通了，那怎么办呢？下面来介绍两种常用方式：
 
@@ -348,17 +348,3 @@ var htmlStr = `
 > Do not use this in production. The only purpose of this utility is to make local development simpler.
 
 **所以注意了**，作者也说了，这个库的目的仅仅是方便本地开发。当然，其中一些技术手段作为学习资料，咱们也是可以了解学习一下的。感兴趣的小伙伴可以访问 [one-click.js 仓库](https://github.com/jordwalke/one-click.js)进一步了解。
-
----
-
-好了，这期的「漫游 Github」就到这里了。本系列会不定期和大家一起看一看、聊一聊、学一学 github 上有趣的项目，不仅学习一些技术点，还可以了解作者的技术思考，欢迎感兴趣的小伙伴关注。
-
-![](https://user-gold-cdn.xitu.io/2020/1/4/16f6c376da73aced?w=1543&h=165&f=png&s=31589)
-
----
-
-## 往期内容
-
-- [【漫游Github】quicklink 的实现原理与给前端的启发](https://juejin.im/post/5c21f8435188256d12597789)
-- [【漫游Github】如何提升JSON.stringify()的性能？](https://juejin.im/post/5cf61ed3e51d4555fd20a2f3)
-

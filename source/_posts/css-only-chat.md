@@ -85,7 +85,7 @@ document.getElementById('btn').addEventListener('click', function () {
 - 使用 JavaScript 创建定时器，定时发送请求轮询
 - 使用 JavaScript 和服务端配合来实现长轮询
 
-但这些方法都无法规避 JavaScript，显然不符合咱们的要求。其实还有一种方式，我在[《各类“服务器推”技术原理与实例》](https://juejin.im/post/5b135b78f265da6e420eab7d)中也有提到，那就是基于 iframe 的长连接流（stream）模式。
+但这些方法都无法规避 JavaScript，显然不符合咱们的要求。其实还有一种方式，我在[《各类“服务器推”技术原理与实例》](/2018/06/08/server-push-methods/)中也有提到，那就是基于 iframe 的长连接流（stream）模式。
 
 这里我们主要是借鉴了“长连接流”这种模式。让我们的页面永远处于一个未加载完成的状态。但是，由于请求头中包含`Transfer-Encoding: chunked`，它会告诉浏览器，虽然页面没有返回结束，但你可以开始渲染页面了。正是由于该请求的响应永远不会结束，所以我们可以不断向其中写入新的内容，来更新页面展示。
 

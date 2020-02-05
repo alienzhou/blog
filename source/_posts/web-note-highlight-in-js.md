@@ -7,9 +7,11 @@ tags:
 - 综合
 ---
 
-今天带大家一起来看看下，如何实现下图的“划词高亮”功能：
+![](/img/web-highlighter.jpg)
 
-[![](/img/16a3b62dd95bac60.gif)](https://alienzhou.github.io/web-highlighter/)
+今天带大家一起来看看下，如何实现“划词高亮”功能。
+
+笔者前段时间为线上业务实现了一个与内容结构非耦合的文本高亮在线笔记功能。非耦合是指**不需要为高亮功能建立特殊的页面 DOM 结构，而高亮功能对业务近乎透明**。该功能核心部分具有较强的通用性与移植性，故拿出来和大家分享交流一下。
 
 <!-- more -->
 
@@ -17,11 +19,9 @@ tags:
 
 有些同学可能不太清楚“划词高亮”是指什么，下面就是一个典型的“划词高亮”：
 
-[![](/img/16a3b62dd95bac60.gif)](https://alienzhou.github.io/web-highlighter/)
+![](/img/16a3b62dd95bac60.gif)
 
 上图的示例网站可以[点击这里访问](https://alienzhou.github.io/web-highlighter/)。用户选择一段文本（即划词），即会自动将这段选取的文本添加高亮背景，用户可以很方便地为网页添加在线笔记。
-
-笔者前段时间为线上业务实现了一个与内容结构非耦合的文本高亮在线笔记功能。非耦合是指**不需要为高亮功能建立特殊的页面 DOM 结构，而高亮功能对业务近乎透明**。该功能核心部分具有较强的通用性与移植性，故拿出来和大家分享交流一下。
 
 > 本文具体的核心代码已封装成独立库 [web-highlighter](https://github.com/alienzhou/web-highlighter)，阅读中如有疑问可参考其中代码↓↓。
 > [![](/img/16a3f9a22e744782.png)](https://github.com/alienzhou/web-highlighter)

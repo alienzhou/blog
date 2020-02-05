@@ -7,7 +7,9 @@ tags:
 - 自动化工具
 ---
 
-> 你真的了解前端模块化么？「一起告别 webpack 配置工程师」
+![](/img/1_dQA3VhfjIQc1DYua6KoLFQ.png)
+
+你真的了解前端模块化么？「一起告别 webpack 配置工程师」
 
 <!-- more -->
 

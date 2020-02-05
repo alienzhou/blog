@@ -8,6 +8,8 @@ tags:
 - 性能优化
 ---
 
+![](/img/68747470733a2f2f692e696d6775722e636f6d2f4e56525a4c48762e706e67.png)
+
 近来，GoogleChromeLabs 推出了 [quicklink](https://github.com/GoogleChromeLabs/quicklink)，用以实现链接资源的预加载（prefetch）。本文在介绍其实现思路的基础上，会进一步探讨在预加载方面前端工程师还可以做什么。
 
 <!-- more -->

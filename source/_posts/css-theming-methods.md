@@ -6,11 +6,13 @@ tags:
 - 翻译
 ---
 
-> 原Slides: [4½ Methods for Theming in (S)CSS](https://speakerdeck.com/csswizardry/4half-methods-for-theming-in-s-css)；作者: Harry Roberts
+![](/img/a1c34f42fd6a13ea1b3c.jpg)
 
-PM 说要实现一个一键设置主题的功能，作为技术，你能想到的实现方式有哪些呢？
+PM 说要为网站实现一键设置主题的功能，作为技术人员，你能想到的实现方式有哪些呢？
 
 <!-- more -->
+
+> 原Slides: [4½ Methods for Theming in (S)CSS](https://speakerdeck.com/csswizardry/4half-methods-for-theming-in-s-css)；作者: Harry Roberts
 
 ## 1. 什么是主题样式？
 

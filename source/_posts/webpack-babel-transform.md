@@ -7,6 +7,8 @@ tags:
 - 自动化工具
 ---
 
+![](./img/babel.jpg)
+
 Babel 是一个非常强大的工具，作用远不止我们平时的 ES6 -> ES5 语法转换这么单一。在前端进阶的道路上，了解与学习 Babel 及其灵活的插件模式将会为前端赋予更多的可能性。
 
 本文就是运用 Babel ，通过编写 [Babel 插件](https://github.com/alienzhou/babel-plugin-import-customized-require) 解决了一个实际项目中的问题。

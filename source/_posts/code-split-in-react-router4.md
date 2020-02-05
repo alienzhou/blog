@@ -3,7 +3,7 @@ title: 在 React-Router4 中进行代码拆分
 date: 2017-06-19 12:00:00
 tags:
 - webpack
-- react
+- React
 - 自动化工具
 ---
 

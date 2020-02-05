@@ -2,7 +2,7 @@
 title: 无编译/服务器，实现浏览器的 CommonJS
 date: 2020-01-10 12:00:00
 tags:
-- 漫游Github
+- 漫游 Github
 - JavaScript
 - 模块化
 ---

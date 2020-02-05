@@ -3,7 +3,7 @@ title: 2018，开始你的 PWA 学习之旅
 date: 2018-04-07 11:00:00
 tags: 
 - PWA
-- Guide
+- 指南
 ---
 
 ![](/img/pwa-pass-3.svg)

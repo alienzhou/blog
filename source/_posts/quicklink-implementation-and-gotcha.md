@@ -2,7 +2,7 @@
 title: quicklink 的实现原理与给前端的启发
 date: 2018-12-25 12:00:00
 tags:
-- 漫游Github
+- 漫游 Github
 - JavaScript
 - 浏览器
 - 性能优化

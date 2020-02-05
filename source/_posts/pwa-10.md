@@ -6,6 +6,8 @@ tags:
 - 性能优化
 ---
 
+![](/img/resource-hint.jpg)
+
 本文是《PWA学习与实践》系列的第十篇文章。也许你还没有听说过或不了解Resource Hint，但是通过本文，你会快速学习到这一件**页面加载性能利器**。本系列相关demo的代码都可以在[github repo](https://github.com/alienzhou/learning-pwa)中找到。
 
 <!-- more -->

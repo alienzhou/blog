@@ -4,6 +4,8 @@ date: 2018-04-14 12:00:00
 tags: PWA
 ---
 
+![](/img/pwa-5.jpg)
+
 本文是《PWA学习与实践》系列的第五篇文章，在接下来的内容里，我们会探究PWA中的另一个重要功能——消息推送与提醒（Push & Notification）。
 
 文中的代码都可以在[learning-pwa的push分支](https://github.com/alienzhou/learning-pwa/tree/push)上找到（`git clone`后注意切换到push分支）。

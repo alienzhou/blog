@@ -6,6 +6,8 @@ tags:
 - Service Worker
 ---
 
+![](/img/pwa-3.jpg)
+
 本文是《PWA学习与实践》系列的第三篇文章，帮你实现一个离线可用的 PWA。文中的代码都可以在[learning-pwa的sw-cache分支](https://github.com/alienzhou/learning-pwa/tree/sw-cache)上找到（`git clone`后注意切换到sw-cache分支）。
 
 <!-- more -->

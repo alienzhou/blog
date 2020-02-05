@@ -1,5 +1,5 @@
 ---
-title: (S)CSS中实现主题样式的4½种方式 [译]
+title: (S)CSS中实现主题样式的4½种方式
 date: 2018-12-12 12:00:00
 tags:
 - CSS
@@ -8,11 +8,11 @@ tags:
 
 ![](/img/a1c34f42fd6a13ea1b3c.jpg)
 
+*本文为翻译文章，原文链接见文末*
+
 PM 说要为网站实现一键设置主题的功能，作为技术人员，你能想到的实现方式有哪些呢？
 
 <!-- more -->
-
-> 原Slides: [4½ Methods for Theming in (S)CSS](https://speakerdeck.com/csswizardry/4half-methods-for-theming-in-s-css)；作者: Harry Roberts
 
 ## 1. 什么是主题样式？
 
@@ -437,4 +437,6 @@ Twitter 就是使用这种方式来实现用户定制化的界面样式的：
 - **是否是类似“贴牌”这类场景？**
 是：选择【方式一】Theme Layer 或【方式四】Theme Palettes
 
+---
 
+原Slides: [4½ Methods for Theming in (S)CSS](https://speakerdeck.com/csswizardry/4half-methods-for-theming-in-s-css)；作者: Harry Roberts

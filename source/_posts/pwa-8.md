@@ -4,6 +4,8 @@ date: 2018-05-14 12:00:00
 tags: PWA
 ---
 
+![](/img/pwa-8.jpg)
+
 普通的页面发起的请求会随着浏览器进程的结束/或者Tab页面的关闭而终止；无网环境下，没有一种机制能“维持”住该请求，以待有网情况下再进行请求。然而，Service Worker的后台同步功能规避了这些缺陷。
 
 文中的代码可以在[learning-pwa的sync分支](https://github.com/alienzhou/learning-pwa/tree/sync)上找到（`git clone`后注意切换到sync分支）。

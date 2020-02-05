@@ -7,6 +7,8 @@ tags:
 - 综合
 ---
 
+![](/img/optimization.jpg)
+
 ## TL;DR
 - 可以考虑基于HTTP Cache来定义打包维度，将Cache周期相同的script尽量打包在一起，最大限度利用Cache；
 - 合并零散的小脚本，避免触发浏览器并发请求限制后，资源请求串行，TTFB叠加等待时间；

@@ -4,6 +4,8 @@ date: 2018-04-07 12:00:00
 tags: PWA
 ---
 
+![](/img/pwa-2.jpg)
+
 本文是《PWA学习与实践》系列的第二篇文章。文中的代码都可以在[learning-pwa的manifest分支](https://github.com/alienzhou/learning-pwa/tree/manifest)上找到（`git clone`后注意切换到manifest分支）。
 
 PWA作为时下最火热的技术概念之一，对提升Web应用的安全、性能和体验有着很大的意义，非常值得我们去了解与学习。对PWA感兴趣的朋友欢迎关注《PWA学习与实践》系列文章。

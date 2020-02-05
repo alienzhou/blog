@@ -6,6 +6,8 @@ tags:
 - TroubleShooting
 ---
 
+![](/img/firebase.jpg)
+
 本文是《PWA学习与实践》系列的第四篇。是我在测试其他demo时遇到的一个问题，算是一篇 TroubleShooting。
 
 <!-- more -->

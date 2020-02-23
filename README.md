@@ -22,7 +22,7 @@
 
 ##  1. <a name=''></a>最新更新
 
-- [【3分钟速览】如何“严谨地”判断两个变量是否相同](https://github.com/alienzhou/blog/issues/34)（2020.02.01）
+- [读《凤凰项目：一个 IT 运维的传奇故事》](https://github.com/alienzhou/blog/issues/35)（2020.02.23）
 
 ##  2. <a name='-1'></a>综合列表
 
@@ -83,3 +83,4 @@
 ##  10. <a name='-1'></a>知识速览
 
 - [【3分钟速览】前端广播式通信：Broadcast Channel ](https://github.com/alienzhou/blog/issues/26)
+- [【3分钟速览】如何“严谨地”判断两个变量是否相同](https://github.com/alienzhou/blog/issues/34)（2020.02.01）

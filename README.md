@@ -15,6 +15,7 @@
 8. [CSS模块化](#CSS-1)
 9. [PWA](#PWA)
 10. [知识速览](#-1)
+11. [阅读笔记](#reading)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
@@ -24,7 +25,7 @@
 
 ##  1. <a name=''></a>最新更新
 
-- [读《凤凰项目：一个 IT 运维的传奇故事》](https://www.alienzhou.com/2020/02/23/the-phoenix-project/)（2020.02.23）
+- [读《信息规则：网络经济的策略指导》](https://www.alienzhou.com/2020/03/02/a-strategic-guide-to-the-network-economy/)（2020.03.02）
 
 ##  2. <a name='-1'></a>综合列表
 
@@ -86,3 +87,7 @@
 
 - [【3分钟速览】前端广播式通信：Broadcast Channel ](https://www.alienzhou.com/2019/04/01/broadcast-channel/)
 - [【3分钟速览】如何“严谨地”判断两个变量是否相同](https://www.alienzhou.com/2020/01/08/a-robust-equality-operation/)
+
+##  11. <a name='reading'></a>阅读笔记
+
+- [读《凤凰项目：一个 IT 运维的传奇故事》](https://www.alienzhou.com/2020/02/23/the-phoenix-project/)

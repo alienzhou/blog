@@ -104,7 +104,7 @@ deploy:
 menu:
   归档: /archives
   分类: /tags
-  关于我: https://about.me/alienzhou
+  关于我: /about
 
 baidu_tongji:
   hm: 64136edb1907ceabdc133e8d5d4566af

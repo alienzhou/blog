@@ -383,7 +383,7 @@ window.addEventListener('message', function (e) {
 
 关于 WebSocket 与其他“服务器推”技术，不了解的同学可以阅读这篇[《各类“服务器推”技术原理与实例》](/2018/06/08/server-push-methods/)
 
-此外，我还针对以上各种方式写了一个 [在线演示的 Demo >>](https://alienzhou.github.io/cross-tab-communication/)
+此外，我还针对以上各种方式写了一个 [在线演示的 Demo >>](/projects/cross-tab-communication/)
 
 
 ![Demo页面](/img/169d8701f85f9f33.gif)

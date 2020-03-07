@@ -104,6 +104,7 @@ deploy:
 menu:
   归档: /archives
   分类: /tags
+  项目示例: /projects
   关于我: /about
 
 baidu_tongji:

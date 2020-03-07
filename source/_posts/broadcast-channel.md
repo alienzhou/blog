@@ -95,7 +95,7 @@ bc.close();
 
 ## Demo 效果
 
-[可以戳这里查看在线 Demo >>](https://alienzhou.github.io/broadcast-channel/)
+[可以戳这里查看在线 Demo >>](/projects/broadcast-channel)
 
 下面是 Broadcast Channel Demo 的演示效果：
 

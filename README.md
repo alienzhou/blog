@@ -25,7 +25,7 @@
 
 ##  1. <a name=''></a>最新更新
 
-- [读《信息规则：网络经济的策略指导》](https://www.alienzhou.com/2020/03/02/a-strategic-guide-to-the-network-economy/)（2020.03.02）
+- [聊一聊 webpack 的打包优化实践](https://www.alienzhou.com/2020/03/28/improvement-in-webpack/)（2020.03.28）
 
 ##  2. <a name='-1'></a>综合列表
 
@@ -91,3 +91,4 @@
 ##  11. <a name='reading'></a>阅读笔记
 
 - [读《凤凰项目：一个 IT 运维的传奇故事》](https://www.alienzhou.com/2020/02/23/the-phoenix-project/)
+- [读《信息规则：网络经济的策略指导》](https://www.alienzhou.com/2020/03/02/a-strategic-guide-to-the-network-economy/)

@@ -26,7 +26,7 @@
         <span class="column is-narrow">
         <% if (!post.external){ %>
             <% let words = word_count(post._content); %>
-            <% let time = duration((words / 200.0) * 60, 'seconds') %>
+            <% let time = duration((words / 300.0) * 60, 'seconds') %>
             <%= `${ time.humanize() } ${ __('article.read')} (${ __('article.about') } ${ words } ${ __('article.words') })` %>
         <% } %>
         </span>

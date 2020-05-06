@@ -17,7 +17,7 @@ tags:
 - 如果[使用 axios 来设置 timeout](https://github.com/axios/axios/issues/2710)，在 [0.19.0 之后](https://github.com/axios/axios/pull/1752/files)实际会调用 [`Request#setTimeout`](https://nodejs.org/dist/latest-v12.x/docs/api/http.html#http_request_settimeout_timeout_callback) 方法，该方法的超时时间不包括 DNS 查询。因此如果你将超时设为 3s，但是 DNS 查询由于 DNS 服务器未响应挂起了 5s（甚至更久），这种情况下你的请求是不会被超时释放的。随着请求的越来越多问题会被累积，造成雪崩。
 - `getaddrinfo` 使用 [resolv.conf](http://man7.org/linux/man-pages/man5/resolv.conf.5.html) 中 nameserver 配置作为本地 DNS 服务器，可以配置多个作为主从。但其并没有完备的探活等自动切换机制。主下掉后，仍然会从第一个开始尝试，超时后切换下一个。即使使用 Round Robin，理论上仍会有 1/N 的请求第一个命中超时节点（N 为 nameserver 的数量）。
 
-针对这种问题，在不去修改 NodeJS 底层（主要是 C/C++ 层）源码的情况下，在 JS 层引入 DNS 的缓存是一个轻量级的方案，会一定程度上规避这个问题（但也并不能完美解决）。因此，计划引入 [lookup-dns-cache](https://www.npmjs.com/package/lookup-dns-cache) 作为优化方案。但 DNS 查询的更换影响面广，引入前需要慎重确认以下问题：
+针对这种问题，在不去修改 NodeJS 底层（主要是 C/C++ 层）源码的情况下，在 JS 层引入 DNS 的缓存是一个轻量级的方案，会一定程度上规避这个问题（但也并不能完美解决）。因此，计划引入 [lookup-dns-cache](https://www.npmjs.com/package/lookup-dns-cache) 作为优化方案。但更换 DNS 查询与引入缓存的影响面较广，线上引入前需要慎重确认以下问题：
 
 <!-- more -->
 

@@ -219,10 +219,10 @@ void ChannelWrap::Setup() {
 
 在 c-ares 中具体配置（包括 dns server）的初始化有四个步骤，从前到后分别是：
 
-- [通过传参初始化配置 - init_by_options](https://github.com/nodejs/node/blob/v12.16.3/deps/cares/src/ares_init.c#L196)
-- [通过环境变量初始化配置 - init_by_environment](https://github.com/nodejs/node/blob/v12.16.3/deps/cares/src/ares_init.c#L203)
-- [通过 resolv conf 初始化 - init_by_resolv_conf](https://github.com/nodejs/node/blob/v12.16.3/deps/cares/src/ares_init.c#L208)
-- [默认方式 - init_by_defaults](https://github.com/nodejs/node/blob/v12.16.3/deps/cares/src/ares_init.c#L218)
+- [通过传参初始化配置：init_by_options](https://github.com/nodejs/node/blob/v12.16.3/deps/cares/src/ares_init.c#L196)
+- [通过环境变量初始化配置：init_by_environment](https://github.com/nodejs/node/blob/v12.16.3/deps/cares/src/ares_init.c#L203)
+- [通过 resolv conf 初始化：init_by_resolv_conf](https://github.com/nodejs/node/blob/v12.16.3/deps/cares/src/ares_init.c#L208)
+- [默认值填充：init_by_defaults](https://github.com/nodejs/node/blob/v12.16.3/deps/cares/src/ares_init.c#L218)
 
 在第一种通过 option 结构体传参中，ares 会通过 `options->nservers` 来获取 DNS 服务器配置。但同时，需要在[操作掩码中设置 `ARES_OPT_SERVERS`](https://github.com/nodejs/node/blob/v12.16.3/deps/cares/src/ares_init.c#L482-L502)。而在 NodeJS 中值设置了 `ARES_OPT_FLAGS | ARES_OPT_SOCK_STATE_CB`，因此不会设置 nservers。此外，init_by_options 中还会[设置 resolvconf_path 的值](https://github.com/nodejs/node/blob/v12.16.3/deps/cares/src/ares_init.c#L547-L552)，该值所指向的地址就是系统 resolv.conf 的地址：
 

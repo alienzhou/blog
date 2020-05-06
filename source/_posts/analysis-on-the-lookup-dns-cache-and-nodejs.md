@@ -1,5 +1,5 @@
 ---
-title: NodeJS 中 DNS 查询的坑 & DNS cache 的调研
+title: NodeJS 中 DNS 查询的坑 & DNS cache 调研
 date: 2020-05-06 14:00:00
 tags:
 - NodeJS

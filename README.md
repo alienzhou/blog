@@ -25,7 +25,7 @@
 
 ##  1. <a name=''></a>最新更新
 
-- [聊一聊 webpack 的打包优化实践](https://www.alienzhou.com/2020/03/28/improvement-in-webpack/)（2020.03.28）
+- [如何实现可复用的控制台“艺术字”打印](https://www.alienzhou.com/2020/11/22/how-to-make-a-tool-for-printing-banner-in-console/)（2020.11.22）
 
 ##  2. <a name='-1'></a>综合列表
 
@@ -44,6 +44,7 @@
 
 ##  4. <a name='-1'></a>自动化工具
 
+- [替代 webpack？带你了解 snowpack 原理](https://www.alienzhou.com/2020/06/18/how-snowpack-works/)
 - [Gulp.js实践详解__基于Gulp的多页面应用实践指南](https://www.alienzhou.com/2017/10/15/mpa-based-on-gulp-in-action/)
 - [🛠如何快速开发一个自己的项目脚手架？](https://www.alienzhou.com/2019/05/17/how-to-make-your-own-scaffold/)
 
@@ -59,6 +60,7 @@
 
 ##  7. <a name='Webpack'></a>Webpack进阶
 
+- [聊一聊 webpack 的打包优化实践](https://www.alienzhou.com/2020/03/28/improvement-in-webpack/)
 - [【webpack进阶】使用babel避免webpack编译运行时模块依赖](https://www.alienzhou.com/2018/08/19/webpack-babel-transform/)
 - [【webpack进阶】前端运行时的模块化设计与实现](https://www.alienzhou.com/2018/08/27/webpack-module-runtime/)
 - [【webpack进阶】可视化展示webpack内部插件与钩子关系📈](https://www.alienzhou.com/2018/09/30/webpack-plugin-hooks-visualization/)

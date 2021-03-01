@@ -25,7 +25,7 @@
 
 ##  1. <a name=''></a>最新更新
 
-- [如何实现可复用的控制台“艺术字”打印](https://www.alienzhou.com/2020/11/22/how-to-make-a-tool-for-printing-banner-in-console/)（2020.11.22）
+- [vue-cli 迁移 vite2 实践小结](https://github.com/alienzhou/blog/issues/45)（2021.03.01）
 
 ##  2. <a name='-1'></a>综合列表
 
@@ -44,6 +44,7 @@
 
 ##  4. <a name='-1'></a>自动化工具
 
+- [vue-cli 迁移 vite2 实践小结](https://github.com/alienzhou/blog/issues/45)
 - [替代 webpack？带你了解 snowpack 原理](https://www.alienzhou.com/2020/06/18/how-snowpack-works/)
 - [Gulp.js实践详解__基于Gulp的多页面应用实践指南](https://www.alienzhou.com/2017/10/15/mpa-based-on-gulp-in-action/)
 - [🛠如何快速开发一个自己的项目脚手架？](https://www.alienzhou.com/2019/05/17/how-to-make-your-own-scaffold/)

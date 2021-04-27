@@ -16,6 +16,7 @@
 9. [PWA](#PWA)
 10. [知识速览](#-1)
 11. [阅读笔记](#reading)
+12. [排障系列](#troubleshooting)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
@@ -25,7 +26,7 @@
 
 ##  1. <a name=''></a>最新更新
 
-- [vue-cli 迁移 vite2 实践小结](https://github.com/alienzhou/blog/issues/45)（2021.03.01）
+- [记一次 Node gRPC 静态生成文件引发的问题](https://github.com/alienzhou/blog/issues/47)（2021.04.12）
 
 ##  2. <a name='-1'></a>综合列表
 
@@ -95,3 +96,7 @@
 
 - [读《凤凰项目：一个 IT 运维的传奇故事》](https://www.alienzhou.com/2020/02/23/the-phoenix-project/)
 - [读《信息规则：网络经济的策略指导》](https://www.alienzhou.com/2020/03/02/a-strategic-guide-to-the-network-economy/)
+
+##  12. <a name='troubleshooting'></a>排障系列
+
+- [记一次 Node gRPC 静态生成文件引发的问题](https://github.com/alienzhou/blog/issues/47)

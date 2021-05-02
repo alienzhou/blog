@@ -26,7 +26,7 @@
 
 ##  1. <a name=''></a>最新更新
 
-- [记一次 Node gRPC 静态生成文件引发的问题](https://github.com/alienzhou/blog/issues/47)（2021.04.12）
+- [npm script 执行”丢失“ root 权限的问题](https://github.com/alienzhou/blog/issues/48)（2021.04.30）
 
 ##  2. <a name='-1'></a>综合列表
 
@@ -99,4 +99,5 @@
 
 ##  12. <a name='troubleshooting'></a>排障系列
 
+- [npm script 执行”丢失“ root 权限的问题](https://github.com/alienzhou/blog/issues/48)
 - [记一次 Node gRPC 静态生成文件引发的问题](https://github.com/alienzhou/blog/issues/47)

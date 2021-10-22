@@ -219,16 +219,3 @@ const timer = setInterval(reportEnvStat, 5000);
 3. Active Handles/Requests 代表当前进程正在忙或将要忙的事儿，它也是 Nodejs 进程不退出的重要原因。
 4. 使用 `.unref()` 方法可以在不“取消” handle 工作的同时，解除该 handle 的 active 计数。
 5. 可以通过 `uv_walk` 或 `env->handle_queue()` 来收集大多数 handle 信息。
-
----
-
-timer 主要来源于两块：
-
-- 来自 [userland](https://nodejs.org/en/knowledge/getting-started/what-is-node-core-verus-userland/) 的定时器，也就是你在代码里写的 `setTimeout`、`setInterval`
-- 来自 node-core 中的定时器，主要是 internal js 模块创建，例如用 `http.request` 方法发送请求时去设置的 timeout
-
-
-本文主要包含两个部分：
-
-1. libvu 是如何实现定时器的？
-2. nodejs 中是如何优化定时器的？

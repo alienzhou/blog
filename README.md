@@ -27,8 +27,7 @@
 
 ##  1. <a name=''></a>最新更新
 
-- [Nodejs 中的 Active Handle 与 Timer 优化（上）](https://github.com/alienzhou/blog/issues/54)（2021.09.13）
-- [Nodejs 中的 Active Handle 与 Timer 优化（下）](https://github.com/alienzhou/blog/issues/55)（2021.09.13）
+- [Node.js 中 HTTP 请求结束后，误报超时的问题排查](https://github.com/alienzhou/blog/issues/58)（2021.10.22）
 
 ##  2. <a name='-1'></a>综合列表
 
@@ -104,6 +103,7 @@
 - [DNS 查询导致的 Nodejs 服务疑似“内存泄漏”问题](https://github.com/alienzhou/blog/issues/49)
 - [npm script 执行”丢失“ root 权限的问题](https://github.com/alienzhou/blog/issues/48)
 - [记一次 Node gRPC 静态生成文件引发的问题](https://github.com/alienzhou/blog/issues/47)
+- [Node.js 中 HTTP 请求结束后，误报超时的问题排查](https://github.com/alienzhou/blog/issues/58)
 
 ##  13. <a name='nodejs'></a>Node.js
 

@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
-    "file-type": "^14.0.0",
+    "file-type": "^16.5.4",
     "hexo": "^4.0.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",

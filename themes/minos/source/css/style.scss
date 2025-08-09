@@ -1,9 +1,12 @@
+@use "sass:color";
+@use "./insight.scss";
+
 $family-serif: "Ovo", "Georgia", "STZhongsong", "Microsoft YaHei", serif;
 $family-mono: "Source Code Pro", monospace, "Microsoft YaHei";
 $border-color: #dbdbdb;
 
 body, button, input, select, textarea {
-    font-family: "PingFangSC-Regular" $family-serif;
+    font-family: "PingFangSC-Regular", $family-serif;
 }
 
 
@@ -48,7 +51,7 @@ a.tag.article-tag {
 
 .article {
     h1 {
-        font-family: "PingFangSC-Regular" $family-serif;
+        font-family: "PingFangSC-Regular", $family-serif;
         font-weight: 500;
         margin: 0.25em auto 0.75em auto;
     }
@@ -210,7 +213,7 @@ a.tag.article-tag {
 
             &.info {
                 border-color: hsl(204, 86%, 53%);
-                background-color: lighten(hsl(204, 86%, 53%), 40%);
+                background-color: color.adjust(hsl(204, 86%, 53%), $lightness: 40%);
 
                 &:before {
                     background-color: hsl(204, 86%, 53%);
@@ -220,7 +223,7 @@ a.tag.article-tag {
 
             &.success {
                 border-color: hsl(141, 71%, 48%);
-                background-color: lighten(hsl(141, 71%, 48%), 40%);
+                background-color: color.adjust(hsl(141, 71%, 48%), $lightness: 40%);
 
                 &:before {
                     background-color: hsl(141, 71%, 48%);
@@ -230,7 +233,7 @@ a.tag.article-tag {
 
             &.warning {
                 border-color: hsl(48, 100%, 67%);
-                background-color: lighten(hsl(48, 100%, 67%), 24%);
+                background-color: color.adjust(hsl(48, 100%, 67%), $lightness: 24%);
 
                 &:before {
                     background-color: hsl(48, 100%, 67%);
@@ -240,7 +243,7 @@ a.tag.article-tag {
 
             &.danger {
                 border-color: hsl(348, 100%, 61%);
-                background-color: lighten(hsl(348, 100%, 61%), 24%);
+                background-color: color.adjust(hsl(348, 100%, 61%), $lightness: 24%);
 
                 &:before {
                     background-color: hsl(348, 100%, 61%);
@@ -641,5 +644,3 @@ figure.highlight {
         position: absolute;
     }
 }
-
-@import "insight";

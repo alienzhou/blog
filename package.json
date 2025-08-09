@@ -10,7 +10,7 @@
     "server": "hexo server"
   },
   "hexo": {
-    "version": "4.2.0"
+    "version": "4.2.1"
   },
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
@@ -23,7 +23,7 @@
     "hexo-generator-tag": "^1.0.0",
     "hexo-renderer-ejs": "^1.0.0",
     "hexo-renderer-marked": "^2.0.0",
-    "hexo-renderer-sass": "^0.4.0",
+    "hexo-renderer-sass": "^0.5.0",
     "hexo-renderer-stylus": "^1.1.0",
     "hexo-server": "^1.0.0",
     "sharp": "^0.24.0"

@@ -27,7 +27,8 @@
 
 ##  1. <a name=''></a>最新更新
 
-- [Node.js 中 HTTP 请求结束后，误报超时的问题排查](https://github.com/alienzhou/blog/issues/58)（2021.10.22）
+- [MCP 是最大骗局？Skills 才是救星？](https://github.com/alienzhou/blog/issues/70)（2026.01.13）
+- [从"鸡肋"到"真香"：语音输入在我 Vibe Coding 这件事上的反转](https://github.com/alienzhou/blog/issues/69)（2025.12.31）
 
 ##  2. <a name='-1'></a>综合列表
 
@@ -109,3 +110,4 @@
 
 - [Nodejs 中的 Active Handle 与 Timer 优化（上）](https://github.com/alienzhou/blog/issues/54)
 - [Nodejs 中的 Active Handle 与 Timer 优化（下）](https://github.com/alienzhou/blog/issues/55)
+- [Node.js 中 HTTP 请求结束后，误报超时的问题排查](https://github.com/alienzhou/blog/issues/58)

@@ -3,3 +3,5 @@ public
 db.json
 **/.DS_Store
 drafts/*.md
+.codeflicker
+.kwaipilot

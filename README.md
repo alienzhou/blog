@@ -28,6 +28,7 @@
 ##  1. <a name=''></a>最新更新
 
 - [Handoff 与 Compaction，Shared-State 与 Post-Message](https://github.com/alienzhou/blog/issues/74)（2026.09.15）
+- [和 AI 结对编程这段时间，我纠结过的 5 件事](https://github.com/alienzhou/blog/issues/75)（2026.01.26）
 - [MCP 是最大骗局？Skills 才是救星？](https://github.com/alienzhou/blog/issues/70)（2026.01.13）
 - [从"鸡肋"到"真香"：语音输入在我 Vibe Coding 这件事上的反转](https://github.com/alienzhou/blog/issues/69)（2025.12.31）
 

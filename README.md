@@ -29,6 +29,7 @@
 
 - [Handoff 与 Compaction，Shared-State 与 Post-Message](https://github.com/alienzhou/blog/issues/74)（2026.09.15）
 - [开发 UI 时候，直接把操作录屏给 Agent](https://github.com/alienzhou/blog/issues/76)（2026.09.09）
+- [AI Coding 时代下，对技术面试的一点思考与实践](https://github.com/alienzhou/blog/issues/77)（2026.09.08）
 - [和 AI 结对编程这段时间，我纠结过的 5 件事](https://github.com/alienzhou/blog/issues/75)（2026.01.26）
 - [MCP 是最大骗局？Skills 才是救星？](https://github.com/alienzhou/blog/issues/70)（2026.01.13）
 - [从"鸡肋"到"真香"：语音输入在我 Vibe Coding 这件事上的反转](https://github.com/alienzhou/blog/issues/69)（2025.12.31）
